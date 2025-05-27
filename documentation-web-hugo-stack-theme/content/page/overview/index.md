@@ -1,8 +1,8 @@
 ---
 title: Overview
 links:
-  - title: GitHub
-    description: a blog about software development.
+  - title: A blog about building a DIY pedal board
+    description: a blog about software and hardware development of a DIY pedal board
 menu:
     main: 
         weight: 1
@@ -13,7 +13,7 @@ comments: false
 toc: false
 ---
 
-# DIY Pedalboard
+# DIY Pedal board
 
 Welcome to my blog — a behind-the-scenes journey into the development of both hardware and software for a modern pedal
 board.
@@ -59,7 +59,8 @@ Let’s build something ridiculous — and ridiculously fun.
 
 This project started — conceptually — about five years ago.
 For a long time, it lived entirely in my head, evolving slowly, quietly, and occasionally waking me up at 3 a.m. with
-brilliant ideas and equally terrible ones. Now, in May 2025, it’s finally taking shape in the real world. And oddly enough, it all began by finding a blogging
+brilliant ideas and equally terrible ones. Now, in May 2025, it’s finally taking shape in the real world. 
+And oddly enough, it all began by finding a blogging
 platform that didn’t make me want to rage-quit. Without that, I couldn’t share any of this with you.
 
 Over the next few months, I’ll show how modern AI — yes, tools like ChatGPT — can accelerate progress, even when
@@ -71,8 +72,8 @@ duck with a PhD and infinite patience.
 Whenever I enter a new field — or start a new software project — I always try to zoom out first.
 I want a bird’s-eye view of the landscape:
 What am I trying to build? What’s the end goal? How do the parts fit together? Who’s likely to rage against the MIDI
-machine? Once I’ve got that overview, I start identifying building blocks — modules or parts that serve a clear, dedicated
-purpose. Then I break them down even further.
+machine? Once I’ve got that overview, I start identifying building blocks — modules or parts that serve a clear, 
+dedicated purpose. Then I break them down even further.
 
 Why? Because just like in the real world, development has its own set of <b>golden rules</b>.
 

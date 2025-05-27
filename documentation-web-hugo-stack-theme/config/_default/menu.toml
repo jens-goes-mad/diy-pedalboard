@@ -10,8 +10,7 @@
 [[social]]
 identifier = "github"
 name = "GitHub"
-url = "https://github.com/"
-
+url = "https://github.com/jens-goes-mad/diy-pedalboard/"
 [social.params]
 icon = "brand-github"
 
@@ -19,15 +18,13 @@ icon = "brand-github"
 identifier = "twitter"
 name = "Twitter"
 url = "https://twitter.com"
-
 [social.params]
 icon = "brand-twitter"
 
 [[social]]
 identifier = "email"
 name = "EMail"
-url = "mailto:developers-help@<our_domain>.com"
-
+url = "mailto:jens@diy-pedalboard.de"
 [social.params]
 vendor = "font-awesome-solid"
 icon = "mail"

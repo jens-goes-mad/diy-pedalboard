@@ -1,0 +1,15 @@
+
+
+5. Quirks, Limitations, and Things to Come<br>
+   Where it shines, where it still fumbles
+   What’s planned next? Looping? WiFi sync? Built-in tuner that judges you?
+
+6. Final Thoughts<br>
+   Reflect on what you’ve learned<br>
+   Invite feedback/collaboration<br>
+   Link to GitHub (if open source), BOM, or build instructions<br>
+   Bonus Section (Optional): "MIDI Confessions"<br>
+   Share a light-hearted moment — a bug that turned into a feature, a MIDI panic that crashed your cat, etc.
+
+
+

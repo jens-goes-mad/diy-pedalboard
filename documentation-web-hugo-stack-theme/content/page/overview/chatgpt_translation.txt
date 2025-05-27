@@ -1,0 +1,23 @@
+This project started conceptually 5 years ago, and evolved over time solely in my head. Over the next couple of month
+I'll show you how a modern AI - like chatgpt - will help you to speed up things even if you enter a new
+programming language world and tool chain. And it started on May 2025 with finding a working BLOG software, otherwise
+I could not share my thoughts. Whenever you enter a new field, a new software project I try to gather a birds view
+first and afterwards look for building block, parts which serve a dedicated purpose and break it down over time.
+The main rule is "separation of concern" and "single responsibility rule". Breaking down blocks into smaller components
+forces me to use "selective ignorance" also knows as abstraction, thus it is allowed to ignore parts and work in these
+later. But, as soon we start thinking in components, we have to think in interfaces, clear structure.
+
+-->
+
+The Beginning (a.k.a. The Five-Year Think-Tank)
+This project started — conceptually — about five years ago.
+For a long time, it lived entirely in my head, evolving slowly, quietly, and occasionally waking me up at 3 a.m. with
+brilliant ideas and equally terrible ones.
+
+Now, in May 2025, it’s finally taking shape in the real world. And oddly enough, it all began by finding a blogging
+platform that didn’t make me want to rage-quit. Without that, I couldn’t share any of this with you.
+
+Over the next few months, I’ll show how modern AI — yes, tools like ChatGPT — can accelerate progress, even when
+you’re diving into a completely new programming language or toolchain. You’ll see how I use it as a kind of rubber
+duck with a PhD and infinite patience.
+

@@ -1,0 +1,27 @@
+/*
+    You can add your own custom styles here.
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  color: orange;
+}
+
+/* Base style for color blocks (light mode by default) */
+.colorblock {
+  background-color: var(--bg-light);
+}
+
+/* Dark mode override: when a parent has data-scheme="dark", use the dark color */
+[data-scheme="dark"] .colorblock {
+  background-color: var(--bg-dark);
+}
+
+/*
+.dark-only {
+  display: none;
+}
+
+[data-scheme="dark"] .dark-only {
+  display: block;
+}
+*/

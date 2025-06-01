@@ -9,8 +9,11 @@ menu:
         params:
             icon: robot
 
-comments: false
-toc: false
+# comments: false
+# layout: listWithContent
+toc: true
+# draft: false
+# search: true
 ---
 
 # ChatGPT...

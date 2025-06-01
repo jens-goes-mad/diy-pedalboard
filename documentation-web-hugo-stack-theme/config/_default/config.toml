@@ -17,5 +17,9 @@ disqusShortname = "hugo-theme-stack"
 [pagination]
 pagerSize = 5
 
+[outputs]
+home = ["HTML", "JSON"]
+
+
 # https://icons.hugomods.com/docs/vendors/
 # https://icons.hugomods.com/docs/installation/

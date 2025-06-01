@@ -16,12 +16,24 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--bg-dark);
 }
 
-/*
-.dark-only {
-  display: none;
+.badge {
+  white-space: nowrap;
+  background-color: orange;
+  color: black;
+  padding: 4px;
+  text-align: center !important;
+  border-radius: 5px;
 }
-
-[data-scheme="dark"] .dark-only {
-  display: block;
+.timeline-table {
+  border: orange solid;
+  border-width: 2px 0 2px 0;
 }
-*/
+.timeline-title {
+  color: orange;
+  text-align: left;
+  font-weight: bold;
+}
+.timeline-table ul {
+  padding-left: 15px;
+  margin: 0;
+}

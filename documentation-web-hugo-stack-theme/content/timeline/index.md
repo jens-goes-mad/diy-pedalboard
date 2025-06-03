@@ -5,7 +5,7 @@ links:
     description: a blog about software and hardware development of a DIY pedal board and here is the timeline
 menu:
     main: 
-        weight: 10
+        weight: 100
         params:
             icon: calendar-stats
 
@@ -30,6 +30,7 @@ your own templates. You can see progress (or not) on github
     title: "Added some docs around ChatGPT"
     body: "
 ChatGPT is such a powerful tool, so there is a section particular for [ChatGPT](/chatgpt) demonstrating usage and results.
+But you can also spend time in useless comment sections and non-working iframes from cusdis (https://cusdis.com)
 "
 ---
 

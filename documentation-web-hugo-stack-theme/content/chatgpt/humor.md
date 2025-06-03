@@ -7,6 +7,7 @@ draft: false
 summary: "Some samples from ChatGPT"
 tags: ["chatgpt", "humor"]
 categories: ["humor"]
+weight: 150
 ---
 ## Humor? A "computer"??
 

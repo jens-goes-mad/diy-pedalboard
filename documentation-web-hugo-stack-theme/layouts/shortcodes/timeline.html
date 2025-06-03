@@ -1,6 +1,6 @@
 <table class="w-full timeline-table">
     <tbody>
-    {{ range .Page.Params.timeline }}
+    {{ range sort .Page.Params.timeline "weight" }}
     {{ partial "timelineitem.html" . }}
     {{ else }}
     <tr><td colspan="2">No items found.</td></tr>

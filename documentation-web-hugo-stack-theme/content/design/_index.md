@@ -7,7 +7,7 @@ menu:
     main: 
         weight: 10
         params:
-            icon: robot
+            icon: palette
 
 # comments: false
 # layout: listWithContent
@@ -18,6 +18,12 @@ toc: true
 
 # Design...
 
-MORE TO COME
+## Form follows function
+
+The phrase “Form follows function” was coined by architect Louis Sullivan in 1896 to express the idea that
+a building’s design should reflect its intended purpose. As Sullivan put it:
+
+> -- <cite>"All things in nature have a shape, that is to say a form, an outward resemblance,
+> that tells us what they are."</cite>
 
 ---

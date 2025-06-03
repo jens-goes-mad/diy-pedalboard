@@ -26,3 +26,30 @@ In the following sections, I’ll break things down into:
 
 Let’s call it collaborative coding — with someone who doesn’t need coffee breaks.
 
+
+
+
+
+maps.Params{"article":maps.Params{"headinganchor":false, "license":maps.Params{"default":"Licensed under CC BY-NC-SA 4.0", "enabled":true}, "math":false, "readingtime":true, "toc":true}, "colorscheme":maps.Params{"default":"auto", "toggle":true},
+
+
+
+
+
+"comments":maps.Params{"beaudar":maps.Params{"issueterm":"pathname", "label":interface {}(nil), "repo":interface {}(nil), "theme":interface {}(nil)}, "cactus":maps.Params{"defaulthomeserverurl":"https://matrix.cactus.chat:8448", "servername":"cactus.chat", "sitename":""},
+
+
+"cusdis":maps.Params{"host":"", "id":""},
+"disqusjs":maps.Params{"admin":"", "adminlabel":"", "apikey":"", "apiurl":"", "shortname":""}, "enabled":true,
+"giscus":maps.Params{"category":"", "categoryid":"", "darktheme":"", "emitmetadata":0, "inputposition":interface {}(nil),
+
+
+maps.Params{"article":maps.Params{"headinganchor":false, "license":maps.Params{"default":"Licensed under CC BY-NC-SA 4.0", "enabled":true}, "math":false, "readingtime":true, "toc":true}, "colorscheme":maps.Params{"default":"auto", "toggle":true}, "comments":maps.Params{"beaudar":maps.Params{"issueterm":"pathname", "label":interface {}(nil), "repo":interface {}(nil), "theme":interface {}(nil)}, "cactus":maps.Params{"defaulthomeserverurl":"https://matrix.cactus.chat:8448", "servername":"cactus.chat", "sitename":""},
+
+ "cusdis":maps.Params{"appid":"78bccc49-d0c2-4175-a53d-88a7616ddd06", "host":"", "id":""},
+ "disqusjs":maps.Params{"admin":"", "adminlabel":"", "apikey":"", "apiurl":"", "shortname":""}, "enabled":true, "giscus":maps.Params{"category":"", "categoryid":"", "darktheme":"", "emitmetadata":0, "inputposition":interface {}(nil), "lang":interface {}(nil), "lighttheme":"", "mapping":"", "reactionsenabled":1, "repo":"", "repoid":"", "strict":interface {}(nil)}, "gitalk":maps.Params{"admin":"", "clientid":"", "clientsecret":"", "owner":"", "repo":""}, "provider":"disqus", "remark42":maps.Params{"host":"", "locale":"", "site":""}, "twikoo":maps.Params{"envid":"", "lang":"", "path":"", "region":""}, "utterances":maps.Params{"issueterm":"pathname", "label":"", "repo":""}, "vssue":maps.Params{"autocreateissue":false, "clientid":"", "clientsecret":"", "owner":"", "platform":"", "repo":""}, "waline":maps.Params{"avatar":"", "emoji":[]interface {}{"https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"}, "lang":"", "locale":maps.Params{"admin":"Admin", "placeholder":interface {}(nil)}, "placeholder":"", "requiredmeta":[]interface {}{"name", "email", "url"}, "serverurl":"", "visitor":""}}, "dateformat":maps.Params{"lastupdated":"May, 2025", "published":"not yet"}, "defaultimage":maps.Params{"opengraph":maps.Params{"enabled":false, "local":false, "src":""}}, "favicon":"/favicon.png", "featuredimagefield":"image", "footer":maps.Params{"customtext":"", "since":2020}, "imageprocessing":maps.Params{"content":maps.Params{"enabled":true}, "cover":maps.Params{"enabled":true}}, "mainsections":[]interface {}{"post"}, "opengraph":maps.Params{"twitter":maps.Params{"card":"summary_large_image", "site":""}}, "rssfullcontent":true, "sidebar":maps.Params{"avatar":maps.Params{"enabled":true, "local":true, "src":"img/avatar.png"}, "compact":false, "emoji":"🍥", "subtitle":"Behind-the-scenes journey into the development of both hardware and software for a modern pedal board."}, "widgets":maps.Params{"homepage":[]interface {}{map[string]interface {}{}, map[string]interface {}{"params":map[string]interface {}{"limit":5}}, map[string]interface {}{"params":map[string]interface {}{"limit":10}}, map[string]interface {}{"params":map[string]interface {}{"limit":10}, "type":"tag-cloud"}}, "page":[]interface {}{map[string]interface {}{"type":"toc"}}}}
+
+
+
+ "cusdis":maps.Params{"appid":"78bccc49-d0c2-4175-a53d-88a7616ddd06", "host":"", "id":""},
+ "disqusjs":maps.Params{"admin":"", "adminlabel":"", "apikey":"", "apiurl":"", "shortname":""}, "enabled":true,

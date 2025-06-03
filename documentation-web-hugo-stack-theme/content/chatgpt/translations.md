@@ -7,6 +7,8 @@ draft: false
 summary: "Some samples from ChatGPT"
 tags: ["chatgpt", "translation"]
 categories: ["translation"]
+weight: 100
+comments: true
 ---
 ## Introduction
 

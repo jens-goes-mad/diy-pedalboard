@@ -147,7 +147,7 @@ The board will support triggering WAV and SFZ files, giving musicians the abilit
 backing tracks, or even full instrument samples, all from their feet.
 
 <b>Hardware</b><br>
-The button layout isn’t a traditional grid of rows and columns.
+The button layout (see [design](/design/form_follows_function)) isn’t a traditional grid of rows and columns.
 Instead, it mimics the shape of a piano octave — making it far more natural for playing notes and triggering chords,
 especially for musicians used to thinking in keys, not coordinates. Furthermore: We're not using a Raspberry Pi 
 here — surprise!<br>

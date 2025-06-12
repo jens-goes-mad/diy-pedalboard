@@ -26,7 +26,6 @@
                     <h2 class="section-description">{{ . }}</h2>
                 {{ end }}
             </div>
-    
             {{- $image := partialCached "helper/image" (dict "Context" . "Type" "section") .RelPermalink "section" -}}
             {{ if $image.exists }}
                 <div class="section-image">
@@ -56,7 +55,7 @@
 
     {{- $subsections := .Sections -}}
     {{- $pages := .Pages | complement $subsections -}}
-    
+
     {{- if eq (len $pages) 0 -}}
         {{/* If there are no normal pages, display subsections in list style, with pagination */}}
         {{/* This happens with taxonomies like categories or tags */}}
@@ -80,9 +79,9 @@
     {{/* List only pages that are not a subsection */}}
     {{ $paginator := .Paginate $pages }}
 
-    <section class="article-list--compact">
+    <section class="article-list">  <!-- article-list--compact -->
         {{ range $paginator.Pages }}
-            {{ partial "article-list/compact" . }}
+            {{ partial "article-list/default" . }}
         {{ end }}
     </section>
 

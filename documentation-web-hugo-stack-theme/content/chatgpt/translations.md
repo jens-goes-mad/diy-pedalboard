@@ -9,6 +9,7 @@ tags: ["chatgpt", "translation"]
 categories: ["translation"]
 weight: 100
 comments: true
+categoryWeight: "200.002"
 ---
 ## Introduction
 

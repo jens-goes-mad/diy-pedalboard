@@ -32,6 +32,9 @@ your own templates. You can see progress (or not) on github
 ChatGPT is such a powerful tool, so there is a section particular for [ChatGPT](/chatgpt) demonstrating usage and results.
 But you can also spend time in useless comment sections and non-working iframes from cusdis (https://cusdis.com)
 "
+  - label: "2025-06-04"
+    title: "Added 'Form follows Function' section"
+    body: ""
 ---
 
 # DIY Pedal board timeline

@@ -10,7 +10,7 @@ menu:
             icon: palette
 
 # comments: false
-# layout: listWithContent
+layout: list
 toc: true
 # draft: false
 # search: true
@@ -27,3 +27,5 @@ a building’s design should reflect its intended purpose. As Sullivan put it:
 > that tells us what they are."</cite>
 
 ---
+
+{{< video src="DIY-Pedalboard_01-11.mp4" type="video/mp4" autoplay="true" loop="true" style="background-color: #272729">}}

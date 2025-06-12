@@ -2,7 +2,7 @@
 menu:
     main:
         name: X
-        weight: 10
+        weight: 2000
         params:
             icon: home
 layout: x

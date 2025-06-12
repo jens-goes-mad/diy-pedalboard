@@ -10,8 +10,8 @@ menu:
             icon: palette
 
 # comments: false
-layout: list
-toc: true
+# layout: list
+# toc: true
 # draft: false
 # search: true
 ---
@@ -26,6 +26,6 @@ a building’s design should reflect its intended purpose. As Sullivan put it:
 > -- <cite>"All things in nature have a shape, that is to say a form, an outward resemblance,
 > that tells us what they are."</cite>
 
----
+{{< video src="DIY-Pedalboard_01-11.mp4" type="video/mp4" autoplay="true" loop="true" style="background-color: #272729" >}}
 
-{{< video src="DIY-Pedalboard_01-11.mp4" type="video/mp4" autoplay="true" loop="true" style="background-color: #272729">}}
+---

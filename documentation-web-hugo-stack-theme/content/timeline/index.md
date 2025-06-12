@@ -5,7 +5,7 @@ links:
     description: a blog about software and hardware development of a DIY pedal board and here is the timeline
 menu:
     main: 
-        weight: 100
+        weight: 1000
         params:
             icon: calendar-stats
 
@@ -34,6 +34,9 @@ But you can also spend time in useless comment sections and non-working iframes 
 "
   - label: "2025-06-04"
     title: "Added 'Form follows Function' section"
+    body: ""
+  - label: "2025-06-13"
+    title: "Added 'Prototype' section and polished text and images in general"
     body: ""
 ---
 

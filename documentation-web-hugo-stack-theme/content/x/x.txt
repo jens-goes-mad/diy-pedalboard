@@ -1,0 +1,21 @@
+    {{ $pages := .Site.RegularPages }}
+    {{ $permalinks := $pages | map "RelPermalink" }}
+    {{ range $permalinks }}
+        <p>{{ . }}</p>
+    {{ end }}
+
+    {{ $main := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+
+    {{ $mainPermalinks := $main | map "RelPermalink" }}
+    {{ $notHiddenPermalinks := $notHidden | map "RelPermalink" }}
+    {{ $intersectPermalinks := $mainPermalinks | intersect $notHiddenPermalinks }}
+
+    {{ $filtered := where .Site.RegularPages "RelPermalink" "in" $intersectPermalinks }}
+    {{ $sorted := sort $filtered "Weight" }}
+
+    <section class="article-list">
+        {{ range $index, $element := $sorted }}
+        {{ partial "article-list/default" . }}
+        {{ end }}
+    </section>

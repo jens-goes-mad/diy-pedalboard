@@ -1,18 +1,22 @@
 ---
-title: "Design hardware (usability)"
+title: "Design hardware (Birds view)"
+summary: "Summary: Design hardware (Birds view and usability)"
 date: 2025-06-01
 layout: article
-type: article
+# type: article
+XType: design
 draft: false
 # tags: ["chatgpt", "humor"]
 # categories: ["humor"]
 weight: 100
+image: "D_FFF_chapter.jpeg"
+categoryWeight: "010.001"
 ---
 ## Form follows function
 
 But this principle doesn’t just apply to architecture — it’s equally valid in technical and product design.
 
-{{< video src="DIY-Pedalboard-1_5.mp4" type="video/mp4" autoplay="true" loop="true" >}}
+{{< video src="DIY-Pedalboard_01-05.mp4" type="video/mp4" autoplay="true" loop="true" >}}
 
 At its core, form follows function means that the shape, structure, and layout of a device should be primarily
 determined by what it’s meant to do. A well-designed tool puts functionality first — ensuring that it’s intuitive,
@@ -31,7 +35,7 @@ As mentioned in the [introductionary](/overview) text, most devices still rely o
 This often forces users to dig through endless menus and decipher cryptic abbreviations — an experience that feels more
 like solving puzzles than making music.
 
-![Image: standard devices](Folie2.jpeg)
+![Image: standard devices](D_FFF_chapter_2.jpeg)
 
 Sure, LCDs may seem a bit outdated, but they still have their use.
 
@@ -50,7 +54,7 @@ A responsive touchscreen combined with a clean, well-designed UI should simplify
 But we need to keep one important thing in mind: during live performances, clarity is king.
 Musicians don’t have time to dig through submenus or second-guess what a button might do.
 
-![Image: 7" touchscreen](Folie3.jpeg)
+![Image: 7" touchscreen](D_FFF_chapter_3.jpeg)
 
 On stage, it's essential to have a quick and clear overview of every control and function.
 Even something like tempo visualization might be a huge help — especially when kicking off songs like
@@ -72,16 +76,12 @@ One screen to rule the stage. One screen to rule the backend.
 
 ### Piano Layout
 
-The primary purpose of a pedal board may firing just program changes, or arbitrary control messages. But we will enter 
-a place where no pedal board has gone before. I want to play notes and chords, this renders buttons in grids useless. 
-Even as a hobby musician I can far better remember note and chords assignments when arranging buttons using a Piano Layout.
+The limited features of cheap pedal boards - firing just program changes, or arbitrary control messages - 
+may sometimes fit, though. But:
 
-![Image: Piano Layout](Folie4.jpeg)
+<b>We’re about to go where no pedal board has gone before!</b>
 
-The primary purpose of most pedal boards is usually limited to firing off Program Change messages or
-sending arbitrary control signals — and that’s perfectly fine... for most people.
-
-<b>But we’re about to go where no pedal board has gone before.</b>
+![Image: Piano Layout](D_FFF_chapter_4.jpeg)
 
 I want to play notes and chords directly from the board — not just trigger events.
 And once you start doing that, traditional grid-style button layouts quickly fall apart.
@@ -89,9 +89,10 @@ They're not built for musical memory — they’re built for symmetry and compac
 
 Even as a hobby musician, I’ve found that I can far more easily recall note and chord positions
 when the buttons are arranged like a piano keyboard. It's just more natural.
-You think in octaves, not XY coordinates.
+You think in octaves, not XY coordinates.  So instead of fighting muscle memory, I decided to embrace it — and 
+design a layout that’s actually made for music.
 
-So instead of fighting muscle memory, I decided to embrace it — and design a layout that’s actually made for music.
+And why not adding sample playback capabilities? Or SFZ? Why should I limit the board to plain MIDI messaging?
 
 ### Past or Future? 
 
@@ -102,4 +103,4 @@ quite different.
 Think of it as a glimpse into the past — before touchscreens, before WiFi,
 before I knew I'd need a second power supply just for my ambition.
 
-![Image: Pedal board, multiple LCDs](Folie5.jpeg)
+![Image: Pedal board, multiple LCDs](D_FFF_chapter_5.jpeg)

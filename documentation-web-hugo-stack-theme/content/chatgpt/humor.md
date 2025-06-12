@@ -8,6 +8,7 @@ summary: "Some samples from ChatGPT"
 tags: ["chatgpt", "humor"]
 categories: ["humor"]
 weight: 150
+categoryWeight: "200.001"
 ---
 ## Humor? A "computer"??
 

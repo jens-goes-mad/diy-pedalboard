@@ -1,0 +1,16 @@
+Sometimes a division by zero is better than an infinite loop.
+Coming from Mac OS X I left the Windows world 15 years ago, because as I mainly use(d) JAVA the machine becomes
+irrelevant and I have Macs in my home office with an uptime of 150 days plus. But nevertheless corner edges may kill
+you sooner or later.
+
+Definitely you can download a live CD of debian, ubuntu whatever, boot your target device from USB,
+click through the installer,
+DD at the end to make a backup of the image and use it as starting point. But that's not fun or exiting at all.
+We can easy the pain by Ansible, Chef, Bash-Scripting, maybe, or just introduce another kind of pain.
+In the world of Docker, why not create a Docker image and let a container create an ISO for dedicated target platform?
+
+And here we go!
+
+
+
+

@@ -1,16 +1,36 @@
-Sometimes a division by zero is better than an infinite loop.
+# Operation System setup
+
+<cite>Sometimes a division by zero is better than an infinite loop.</cite>
+
 Coming from Mac OS X I left the Windows world 15 years ago, because as I mainly use(d) JAVA the machine becomes
 irrelevant and I have Macs in my home office with an uptime of 150 days plus. But nevertheless corner edges may kill
-you sooner or later.
+you sooner or later, even on MacOSX.
 
 Definitely you can download a live CD of debian, ubuntu whatever, boot your target device from USB,
 click through the installer,
 DD at the end to make a backup of the image and use it as starting point. But that's not fun or exiting at all.
-We can easy the pain by Ansible, Chef, Bash-Scripting, maybe, or just introduce another kind of pain.
-In the world of Docker, why not create a Docker image and let a container create an ISO for dedicated target platform?
+We can easy the pain by Ansible, Chef, Bash-Scripting, maybe, or just introduce another kind of torture.
+But, in the world of Docker, why not create a Docker image and let a container create an ISO for dedicated target platform?
 
 And here we go!
 
+## Docker
+
+I chose Docker to build my custom Linux ISO/IMGs for several key reasons, and here’s a clear and concise summary why:
+
+- Reproducibility
+  Docker ensures builds run identically across environments (macOS, Linux, CI).
+- Isolation
+  Image creation tools like losetup, parted, and kpartx can be messy.
+  Docker provides a clean, disposable environment for each build.
+- Cross-Architecture Flexibility
+  With QEMU inside Docker, we can build for multiple targets (e.g. aarch64, x86_64) from the same host.
+- Dependency Encapsulation
+  Tools like debootstrap, grub, xorriso, and squashfs-tools don’t need to be installed on the host — Docker handles them.
+- Host-Agnostic
+  Our build runs the same on Ubuntu, macOS (via UTM), CI pipelines, or cloud VMs.
+
+## Expectation
 
 
 

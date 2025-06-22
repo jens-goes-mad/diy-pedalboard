@@ -1,6 +1,10 @@
 ---
-title: "Design hardware (Birds view)"
-summary: "Summary: Design hardware (Birds view and usability)"
+title: "Design hardware (Form follows function)"
+summary: "
+Why Function Is Important — But Design Matters Too
+Yes, function comes first. If it doesn’t work, it doesn’t matter how it looks.
+But once the functionality is there, design is what makes it usable — and unforgettable.
+"
 date: 2025-06-01
 layout: article
 # type: article

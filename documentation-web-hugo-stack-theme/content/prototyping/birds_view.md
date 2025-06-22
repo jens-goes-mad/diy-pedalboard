@@ -1,6 +1,10 @@
 ---
 title: "Prototyping the DIY-pedal board"
-summary: "Prototyping the DIY-pedal board"
+summary: "
+A quick look at how to fly high and take a bird’s-eye view — spotting the system’s natural building blocks
+and dedicated components early on. It’s about seeing structure before code, and using that vision to guide
+cleaner, modular design.
+"
 date: 2025-06-01
 layout: article
 # type: article

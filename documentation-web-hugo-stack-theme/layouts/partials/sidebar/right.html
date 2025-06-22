@@ -21,6 +21,7 @@
                 <h2>Topics</h2>
                 {{ range $pages }}
                 <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Summary }}</p>
                 {{ end }}
             </div>
         {{ else }}
@@ -38,6 +39,7 @@
                 <h2>More in this section</h2>
                 {{ range $siblings }}
                 <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Summary }}</p>
                 {{ end }}
             </div>
             {{ end }}

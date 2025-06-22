@@ -1,6 +1,9 @@
 ---
 title: "Prototyping software parts"
-summary: "Prototyping software parts"
+summary: "
+Rapid prototyping is my go-to approach: break the rules, build fast, then refactor once it works.
+It’s about momentum first, structure second — because iteration is the process.
+"
 date: 2025-06-01
 layout: article
 # type: article

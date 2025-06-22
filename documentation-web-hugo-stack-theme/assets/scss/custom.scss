@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: fill !important;
 }
 .article-list img {
-  object-fit: fill !important;
+  object-fit: cover !important;
 }
 
 .gallery {
@@ -50,10 +50,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.sidebar {
+  font-size: 0.95em;
+}
 .sidebar-siblings {
   border-width: 1px;
   border-color: lightgray;
   border-style: solid;
   border-radius: 10px;
   padding: 0 15px 0 15px;
+}
+.sidebar-siblings p {
+  color: #999999;
+}
+
+
+#TableOfContents > ol li ol li {
+  margin: 0 !important;
 }

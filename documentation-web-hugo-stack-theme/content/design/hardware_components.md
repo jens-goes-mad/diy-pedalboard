@@ -1,6 +1,11 @@
 ---
 title: "Design hardware (components)"
-summary: "Summary: Design hardware components"
+summary: "
+From Bird’s Eye to Building Blocks, or: how to analyze the device from the outside in — looking at the front, 
+the rear, the buttons, the I/O, and collecting real-world requirements not just from specs, but from how the user 
+interacts with it. This perspective helps identify natural components and responsibilities — even before the 
+first line of code is written.
+"
 date: 2025-06-01
 layout: article
 # type: article

@@ -1,0 +1,16 @@
+From Foot switches to Full Stack — A Developer’s Journey into Music Tech
+
+After three decades of software development in finance, transportation, healthcare, and high-performance
+trading / shopping systems, I decided to start something completely new — powered by curiosity, caffeine,
+and my pair programming companion: ChatGPT.
+
+The "DIY MIDI Pedal Board Music Workstation" — a modular, touchscreen-driven music controller with,
+Real-time MIDI processing, SFZ sample playback, a custom Linux build system powered by Docker, C++, DART, FLUTTER,
+Microcontrollers, hardcore refurbished hardware (save the planet!). From battling Java native image compilation
+to repurposing LCD tiles like it’s 1983, this spare-time project is packed with music tech, software architecture,
+and creative problem-solving.
+
+Join my pain. Learn from my mistakes (Short story — I don’t make any)
+Follow along as this thing slowly turns into something ridiculous — and hopefully ridiculously cool.
+
+👉 [Read the full story on my blog – or reach out if you're curious!]

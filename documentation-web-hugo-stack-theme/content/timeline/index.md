@@ -38,6 +38,17 @@ But you can also spend time in useless comment sections and non-working iframes 
   - label: "2025-06-13"
     title: "Added 'Prototype' section and polished text and images in general"
     body: ""
+  - label: "2025-06-21"
+    title: "Déjà Vu and LCD Displays, Tiles and more"
+    body: "
+Whatever I do lately, I can’t shake the feeling: I’ve done this before. 
+Working with I²C LCD displays in 2025 feels eerily similar to 1986, when we hacked together our first games
+in assembly, squinting at green or orange screens and praying our 80×40 character displays would hold steady
+through the crash and programs were saved on cassette correctly. 
+Or back in 1991, when I tried to squeeze every last cycle out of my Casio FX-602P — my first programmable calculator.
+512 precious program steps. Solving a² + b = x equations on the fly, with hardware over-clocking.
+A time when no teacher had any idea what this little pocket genius could actually do.
+"
 ---
 
 # DIY Pedal board timeline

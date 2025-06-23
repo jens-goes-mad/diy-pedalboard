@@ -1,2 +1,9 @@
-
+https://www.baldengineer.com/arduino-keyboard-matrix-tutorial.html
+https://arduino.stackexchange.com/questions/66691/which-kind-of-diodes-i-should-use-in-buttons-keys-matrix-input-making-gaming-k
 https://hackaday.io/project/173454-2020-hdp-dream-team-ucpla/log/181899-keyboard-matrix-scanning
+https://forum.arduino.cc/t/pcb-keypad-matrix-help/1124594?_gl=1*1istcbk*_up*MQ..*_ga*MjA3MDMxMjcuMTc0OTc3NjU5OQ..*_ga_NEXN8H46L5*czE3NDk3NzY1OTckbzEkZzAkdDE3NDk3NzY1OTckajYwJGwwJGgxMzQ1MjM2Nzg1
+
+https://www.slidescarnival.com/template/tech-startup-brand/154090
+
+
+

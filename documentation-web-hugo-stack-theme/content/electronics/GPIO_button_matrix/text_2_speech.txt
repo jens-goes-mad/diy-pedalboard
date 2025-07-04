@@ -1,0 +1,18 @@
+How does a Button matrix work?
+
+Usually n Buttons require n wires to n inputs. To minimize the number of Pins,
+buttons are organized in grid like structure.
+
+The schematic LEDs on top are an indicator if a column is active (high) or not (low), later
+read by a GPIO Pin as input, so a microcontroller can detect the state of a switch in a row.
+
+The switches on the left simulate the microcontrollers GPIO Output pins and select a "row" to
+allow checking button state for all buttons in ONE row at the same time.
+
+Even buttons are pressed right now, no LED lights up.
+
+The microcontroller has to actively pull down the ROW line to GND, so current can flow.
+In an infinite loop we now check one row after the other.
+
+In case more than one row is activated, the diodes prevents shortening the circuit, nevertheless
+the result is an "OR" operation across each column, which is not we want...

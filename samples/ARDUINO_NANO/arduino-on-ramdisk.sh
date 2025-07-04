@@ -1,0 +1,1 @@
+TMPDIR=/Volumes/myramdisk/arduino_build /Applications/Arduino\ IDE.app/Contents/MacOS/Arduino\ IDE

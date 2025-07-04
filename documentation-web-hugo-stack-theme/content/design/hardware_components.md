@@ -8,13 +8,9 @@ first line of code is written.
 "
 date: 2025-06-01
 layout: article
-# type: article
-XType: design
 draft: false
-# tags: ["chatgpt", "humor"]
-# categories: ["humor"]
 weight: 100
-image: "D_HC_chapter.jpeg"
+image: "ChatGPT_Hardware_mess.png"
 categoryWeight: "010.002"
 ---
 ## From Bird's Eye to Building Blocks

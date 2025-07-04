@@ -7,13 +7,9 @@ cleaner, modular design.
 "
 date: 2025-06-01
 layout: article
-# type: article
 XType: design
 draft: false
-# tags: ["chatgpt", "humor"]
-# categories: ["humor"]
 weight: 100
-# image: "D_HC_chapter.jpeg"
 categoryWeight: "020.001"
 ---
 ## Thinking Naively (and Breaking the Rules on Purpose)<br>

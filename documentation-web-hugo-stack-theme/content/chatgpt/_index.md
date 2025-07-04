@@ -15,7 +15,6 @@ toc: true
 # draft: false
 # search: true
 ---
-
 # ChatGPT...
 
 ...or how my friendly AI pair-programming dude helped me tackle programming questions and write documentation —

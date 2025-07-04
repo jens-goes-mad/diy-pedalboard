@@ -7,11 +7,7 @@ But once the functionality is there, design is what makes it usable — and unfo
 "
 date: 2025-06-01
 layout: article
-# type: article
-XType: design
 draft: false
-# tags: ["chatgpt", "humor"]
-# categories: ["humor"]
 weight: 100
 image: "D_FFF_chapter.jpeg"
 categoryWeight: "010.001"

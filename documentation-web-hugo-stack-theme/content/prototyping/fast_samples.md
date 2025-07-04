@@ -6,13 +6,8 @@ It’s about momentum first, structure second — because iteration is the proce
 "
 date: 2025-06-01
 layout: article
-# type: article
-XType: design
 draft: false
-# tags: ["chatgpt", "humor"]
-# categories: ["humor"]
 weight: 101
-# image: "D_HC_chapter.jpeg"
 categoryWeight: "020.002"
 ---
 ## Prototyping?

@@ -47,7 +47,24 @@ in assembly, squinting at green or orange screens and praying our 80×40 charact
 through the crash and programs were saved on cassette correctly. 
 Or back in 1991, when I tried to squeeze every last cycle out of my Casio FX-602P — my first programmable calculator.
 512 precious program steps. Solving a² + b = x equations on the fly, with hardware over-clocking.
-A time when no teacher had any idea what this little pocket genius could actually do.
+A time when no teacher had any idea what this little pocket genius could actually do 
+([prototyping - thinking out of the box](/prototyping/thinking_out_of_the_box/))
+"
+  - label: "2025-06-31"
+    title: "Electronics"
+    body: "
+Added a new Section as introduction to electronics in general, and how to burn fingers, while soldering.
+This is an introduction to upcoming topics like MIDI and Button Matrix devices 
+([design - electronics](/design/electronic_circuits)).
+"
+  - label: "2025-07-05"
+    title: "Arduino"
+    body: "
+I’ve added a new section as an introduction to Arduino and 8-bit processors in general ([Arduino](/arduino)).
+We’ll take a closer look at instructions and cycles ([AVR](/arduino/instruction-basics)) and then really 
+torture ourselves with disassembly, HEX opcodes, and low-level instruction analysis ([Instructions and Cycles](/arduino/instruction-loop-sample)).
+
+
 "
 ---
 

@@ -5,11 +5,7 @@ How to design circuits, burn resistors and LEDs, wire chaos
 "
 date: 2025-06-01
 layout: article
-# type: article
-XType: design
 draft: false
-# tags: ["chatgpt", "humor"]
-# categories: ["humor"]
 weight: 100
 image: "Apple2e_motherboard.jpg"
 categoryWeight: "010.001"

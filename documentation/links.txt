@@ -7,3 +7,17 @@ https://www.slidescarnival.com/template/tech-startup-brand/154090
 
 
 
+https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/peripherals/usb_device.html
+https://github.com/espressif/esp-idf/blob/v5.4.2/examples/peripherals/usb/device/tusb_midi/main/tusb_midi_main.c
+https://docs.espressif.com/projects/esp-matter/en/latest/esp32s3/production.html
+https://forum.arduino.cc/t/esp32-midi-over-usb/1378881/2
+https://github.com/collaborative-music-lab/ESP_MIDI
+https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+https://esp32io.com/
+
+
+https://tabler.io/icons
+https://worldvectorlogo.com/de
+
+
+https://doodlenerd.com/css-element/speech-bubble-generator

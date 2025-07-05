@@ -63,8 +63,7 @@ This is an introduction to upcoming topics like MIDI and Button Matrix devices
 I’ve added a new section as an introduction to Arduino and 8-bit processors in general ([Arduino](/arduino)).
 We’ll take a closer look at instructions and cycles ([AVR](/arduino/instruction-basics)) and then really 
 torture ourselves with disassembly, HEX opcodes, and low-level instruction analysis ([Instructions and Cycles](/arduino/instruction-loop-sample)).
-
-
+Extended HUGO to show tags sorted (thanks to ChatGPT), added navigation links, some images, aso
 "
 ---
 

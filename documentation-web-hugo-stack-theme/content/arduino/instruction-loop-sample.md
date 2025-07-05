@@ -6,7 +6,9 @@ draft: false
 summary: "All about instructions and Opcodes, Cycles!"
 weight: 150
 categoryWeight: "300.200"
-# image: "_.jpeg"
+image: "PB_LDI_SUB_CALL.jpg"
+tags: ["hardware", "instructions", "cycles", "AVR", "Arduino"]
+categories: ["arduino"]
 ---
 ## Processor Internals
 
@@ -14,7 +16,8 @@ categoryWeight: "300.200"
 
 Let’s take a look at a really small, bare-minimum test program written in Arduino C++.<br>
 Note: This snippet is for demonstration purposes only.
-You can find the full runnable version on GitHub: TODO
+You can find the full runnable version on
+[GitHub](https://github.com/jens-goes-mad/diy-pedalboard/tree/master/samples/ARDUINO_NANO/the-beginning/cycles/cycles.ino)
 
     const unsigned long C_LOOP_COUNT = 3000000;
     
@@ -141,7 +144,7 @@ Now, using this information, we can calculate the total number of cycles for all
 | 0x3ea   | f1 04       | cpc r15, r1                              | 1                         |
 | 0x3ec   | 69 f7       | brne .-38 (branch if not equal, to 0x3c8)| 2 if taken, 1 if not      |
 
-…and we get 20Air cycles per loop iteration. This allows us to estimate the expected runtime of our program:
+…and we get 20 Air cycles per loop iteration. This allows us to estimate the expected runtime of our program:
 
 > 3.000.000 [loop(s)] * 20 [cycles / loop] = 60.000.000 [cycles]<br>
 > 60.000.000 [cycles] / 16.000.000 [cycles / sec] = 3.75 [sec] = 3750 [ms]

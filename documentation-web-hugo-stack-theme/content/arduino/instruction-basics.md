@@ -6,7 +6,9 @@ draft: false
 summary: "Overview about instructions and Opcodes"
 weight: 150
 categoryWeight: "300.100"
-# image: "_.jpeg"
+image: "PB_Processors.jpg"
+tags: ["hardware", "microcontroller", "AVR", "Arduino"]
+categories: ["arduino"]
 ---
 ## Processor basics
 

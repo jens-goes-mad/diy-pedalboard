@@ -29,7 +29,7 @@ them ideal for controlling real-world systems efficiently.
 
 ## Pin Out
 
-Let's have a quick look at the ESP32 Pin Out (https://esp32io.com/):
+Let's have a quick look at the [ESP32](https://esp32io.com/) Pin Out:
 
 ![ESP32 Pin Out](ESP32_PinOut.png)
 
@@ -61,13 +61,22 @@ to life.
 
 ## And now?
 
-In the next sections, we’ll explore:
-- [USB: how to detect, connect, and communicate with our main brain device](/electronics/USB).
-- [MIDI I/O: sending, receiving, filtering, and transforming MIDI messages](/electronics/MIDI_IO).
-- [I²C: communicating with displays, sensors, and other low-speed peripherals](/electronics/I2C).
-- [GPIO: connect our button matrix](/electronics/GPIO_button_matrix).
-- [RGB LED control: from subtle status indicators to full-on stage light effects](/electronics/RGB_LED).
+In the next **(upcomming)** sections, we’ll explore:
+- [TBD: USB: how to detect, connect, and communicate with our main brain device](/electronics/USB)
+- [TBD: MIDI I/O: sending, receiving, filtering, and transforming MIDI messages](/electronics/MIDI_IO)
+- [TBD: I²C: communicating with displays, sensors, and other low-speed peripherals](/electronics/I2C)
+- [TBD: GPIO: connect our button matrix](/electronics/GPIO_button_matrix)
+- [TBD: RGB LED control: from subtle status indicators to full-on stage light effects](/electronics/RGB_LED)
 
 Each topic will come with practical examples, code insights, and real hardware use cases — because blinking LEDs are fun,
 but controlling a rig like a pro is even better.
 
+You can also jump to the closely related topics like:
+
+- [Arduino](/arduino)
+- [Arduino Processor basics](/arduino/instruction-basics)
+- [AVR Cycles, Opcodes, Instructions](/arduino/instruction-loop-sample)
+
+Or: 
+
+- [Design - Hardware/Electronics](/design/electronic_circuits)

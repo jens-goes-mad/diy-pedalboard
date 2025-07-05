@@ -1,0 +1,20 @@
+{{- $context := .Context -}}
+<section class="widget tagCloud">
+    <div class="widget-icon">
+        {{ partial "helper/icon" "tag" }}
+    </div>
+    <h2 class="widget-title section-title">{{ T "widget.tagCloud.title" }}</h2>
+
+    <div class="tagCloud-tags">
+        {{ $tags := slice }}
+        {{ range $key, $val := $context.Site.Taxonomies.tags }}
+        {{ $tags = $tags | append (dict "name" $key "pages" $val) }}
+        {{ end }}
+
+        {{ range sort $tags "name" }}
+        <a href="{{ (index .pages 0).Permalink }}" class="font_size_{{ len .pages }}">
+            {{ .name }}
+        </a>
+        {{ end }}
+    </div>
+</section>

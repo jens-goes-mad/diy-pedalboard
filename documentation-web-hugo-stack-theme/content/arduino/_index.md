@@ -14,7 +14,8 @@ categories: ["arduino"]
 ---
 # ARDUINO
 
-I started with an 8-bit processor in the mid-80s on an Apple IIe, marking my first deep dive into computing.
+I started with an 8-bit processor in the mid-80s on an 
+[Apple IIe](/design/electronic_circuits), marking my first deep dive into computing.
 Back then, I explored languages like Assembler and Pascal, slowly decoding the magic of opcodes, instructions, and CPU cycles.
 
 Now, nearly 40 years later, the circle has closed.
@@ -48,14 +49,17 @@ So, I asked my trusty sidekick ChatGPT:
 
 <span class="chatgpt">Please, provide a shell script to create / delete a ram disk on MacOSX</span>
 
-See result on github: samples/osx-ramdisk.sh
+See result on 
+[GitHub](https://github.com/jens-goes-mad/diy-pedalboard/tree/master/samples/osx-ramdisk.sh)
+
 
 Next, we need to trick the Arduino IDE into using the RAM disk as the build destination.
 We do this by forcing it through the TMP environment variable.
 
 <span class="chatgpt">Can you force Arduino IDE to use the ram disk as build destination?</span>
 
-See result on github: samples/ARDUINO_NANO/arduino-on-ramdisk.sh
+See result on
+[GitHub](https://github.com/jens-goes-mad/diy-pedalboard/tree/master/samples/ARDUINO_NANO/arduino-on-ramdisk.sh)
 
 Instead of clicking the shiny Arduino IDE icon, we simply start it from a shell script.
 And honestly? We can live with that.

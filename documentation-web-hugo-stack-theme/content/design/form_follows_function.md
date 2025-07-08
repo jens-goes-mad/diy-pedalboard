@@ -104,3 +104,5 @@ Think of it as a glimpse into the past — before touchscreens, before WiFi,
 before I knew I'd need a second power supply just for my ambition.
 
 ![Image: Pedal board, multiple LCDs](D_FFF_chapter_5.jpeg)
+
+[Now we know how it looks like - theoretically, time to scratch hardware](/design/hardware_components).

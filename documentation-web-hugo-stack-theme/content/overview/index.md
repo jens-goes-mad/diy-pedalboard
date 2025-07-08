@@ -35,7 +35,10 @@ MIDI-capable control center.
 So here’s the idea:
 I’m building a <b>DIY MIDI MUSIC WORKSTATION PEDAL BOARD</b>.
 
-![Image 1](pedalboard_1920x1080.png)
+![OpenSCAD rendering of my initial
+DIY MIDI MUSIC WORKSTATION PEDAL BOARD.
+](pedalboard_1920x1080.png)
+
 
 Yes, it’s a mouthful — but it’s also going to be a powerhouse.
 
@@ -101,21 +104,21 @@ creation challenges.
 
 {{< colorblock dark="#323232" light="#e0e0e0" >}}
 ### Introduction: The Why
-   As I hinted in the opening post, most existing pedal boards are missing features that should be considered basic
-   by now. For example: 
-   - Some midi devices can't operate standalone — meaning you need a laptop on stage just to make them useful.
-   - They rarely support a full MIDI implementation — forget about proper SysEx handling or advanced message routing.
-   - They offer little to no MIDI processing or translation — no filtering, merging, or dynamic manipulation.
-   - They don’t support audio playback, like triggering WAV or SFZ files.<br>
+As I hinted in the opening post, most existing pedal boards are missing features that should be considered basic
+by now. For example: 
+- Some midi devices can't operate standalone — meaning you need a laptop on stage just to make them useful.
+- They rarely support a full MIDI implementation — forget about proper SysEx handling or advanced message routing.
+- They offer little to no MIDI processing or translation — no filtering, merging, or dynamic manipulation.
+- They don’t support audio playback, like triggering WAV or SFZ files.<br>
    
-   And the hardware? Often underpowered, with clunky UIs on postage-stamp-sized LCDs that feel like leftovers from
-   a ‘90s microwave. I’m aiming to fix all that. 
-   My version will include a touchscreen, modern UI, real processing power, flexible routing, sound playback, 
-   and maybe — just maybe — that elusive "Make Coffee" feature in version 2. But let’s not get ahead of ourselves.
+And the hardware? Often underpowered, with clunky UIs on postage-stamp-sized LCDs that feel like leftovers from
+a ‘90s microwave. I’m aiming to fix all that. 
+My version will include a touchscreen, modern UI, real processing power, flexible routing, sound playback, 
+and maybe — just maybe — that elusive "Make Coffee" feature in version 2. But let’s not get ahead of ourselves.
 {{< /colorblock >}}
+
 {{< colorblock dark="#383838" light="#eaeaea" >}}
 ### Core Features (wishlist)
-
 A modern MIDI pedal board should be more than just a button box with blinking lights.
 At its core, it should be capable of sending any kind of MIDI message — from a simple note-on to full chords,
 from CC messages to complex bank or program changes — all triggered by a single foot press.<br>
@@ -160,10 +163,14 @@ The board runs on a full-fledged computer, capable of supporting:
 This hardware gives us the freedom and power to build a serious, extensible platform — one that musicians and
 tinkerers alike can truly customize.
 
+For the curious, directly navigate to:
+- [prototyping (birds view)](/prototyping/birds_view)
+- [design](/design)
+- [hardware and components](/design/hardware_components)
 {{< /colorblock >}}
+
 {{< colorblock dark="#323232" light="#e0e0e0" >}}
 ### Under the Hood: Software / Hardware Design and Tools
-
 In this section, we’ll dig into the tools, languages, and design decisions behind the scenes — both digital 
 and physical. I’ll walk through the programming languages and frameworks I’m using, and more importantly, 
 why I chose them (spoiler: it’s not always logical — sometimes it’s just what compiles before midnight).
@@ -177,11 +184,15 @@ why I chose them (spoiler: it’s not always logical — sometimes it’s just w
   and hopefully a few satisfying “before/after” moments.
 - And who knows — we might even learn some hard truths, like how 220V really does hurt when you’re not paying
   attention.
+
+For the curious, directly navigate to:
+- [electronics and I²C](/electronics/i2c)
 {{< /colorblock >}}
 
-   ---
+---
 
 ## Final Thoughts
+
 MORE TO COME
 
-   ---
+---

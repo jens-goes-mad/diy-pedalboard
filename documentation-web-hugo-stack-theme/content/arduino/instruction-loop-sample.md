@@ -4,7 +4,7 @@ title: Arduino Instructions
 layout: article
 draft: false
 summary: "All about instructions and Opcodes, Cycles!"
-weight: 150
+weight: 160
 categoryWeight: "300.200"
 image: "PB_LDI_SUB_CALL.jpg"
 tags: ["hardware", "instructions", "cycles", "AVR", "Arduino"]
@@ -109,6 +109,8 @@ What happens here — <span class="cli-action">sub r12, r24</span> — is that t
 subtracted from the value in register **r12**, and the result is stored back into **r12**.
 Since we previously loaded **r24** with **1** using LDI, this operation effectively decrements **r12 by 1**.
 Whatever value was in **r12** before now gets reduced by one, and this updated value stays in r12 for the next operation.
+
+---
 
 ## Cycles
 

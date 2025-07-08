@@ -28,4 +28,6 @@ a building’s design should reflect its intended purpose. As Sullivan put it:
 
 {{< video src="DIY-Pedalboard_01-11.mp4" type="video/mp4" autoplay="true" loop="true" style="background-color: #272729" >}}
 
+[Let's start by looking at the expected result](/design/form_follows_function).
+
 ---

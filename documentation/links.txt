@@ -14,6 +14,7 @@ https://forum.arduino.cc/t/esp32-midi-over-usb/1378881/2
 https://github.com/collaborative-music-lab/ESP_MIDI
 https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 https://esp32io.com/
+https://wolles-elektronikkiste.de/en/arduino-nano-every-a-deep-dive
 
 
 https://tabler.io/icons

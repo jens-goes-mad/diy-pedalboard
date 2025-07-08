@@ -6,7 +6,7 @@ How to design circuits, burn resistors and LEDs, wire chaos
 date: 2025-06-01
 layout: article
 draft: false
-weight: 100
+weight: 120
 image: "Apple2e_motherboard.jpg"
 categoryWeight: "010.001"
 ---
@@ -101,3 +101,10 @@ That’s when we’ll get our hands dirty with Eagle, designing PCBs and solderi
 button matrix scanner and the MIDI I/O interface.
 
 It's time to move from theory to hardware — and yes, probably burn a few fingertips in the process.
+
+---
+
+Where to go next?<br>
+[Prototyping?](/prototyping)<br>
+[Electronics?](/electronics)<br>
+[Arduino (Instructions, Cycles...)?](/arduino)<br>

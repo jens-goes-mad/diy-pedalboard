@@ -9,7 +9,7 @@ first line of code is written.
 date: 2025-06-01
 layout: article
 draft: false
-weight: 100
+weight: 110
 image: "ChatGPT_Hardware_mess.png"
 categoryWeight: "010.002"
 ---
@@ -61,3 +61,5 @@ Not essential for a pedal board — unless you’re developing.
 Thanks to the API-driven architecture (details coming later), remote access becomes possible.
 This means you can test and tweak the system from your desk, even if the pedal board is stationed on the other
 side of the studio next to my keyboard rig.
+
+[Time to solder! Or better simulate first](/design/electronic_circuits).

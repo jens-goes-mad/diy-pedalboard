@@ -8,8 +8,8 @@ retro past — revisiting the principles behind 2D scrolling arcade games, and h
 date: 2025-06-01
 layout: article
 draft: false
-weight: 120
-categoryWeight: "020.002"
+weight: 130
+categoryWeight: "020.030"
 ---
 # Prototyping outside the box?
 

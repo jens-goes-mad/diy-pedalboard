@@ -57,13 +57,14 @@ Added a new Section as introduction to electronics in general, and how to burn f
 This is an introduction to upcoming topics like MIDI and Button Matrix devices 
 ([design - electronics](/design/electronic_circuits)).
 "
-  - label: "2025-07-05"
+  - label: "2025-07-06"
     title: "Arduino"
     body: "
 I’ve added a new section as an introduction to Arduino and 8-bit processors in general ([Arduino](/arduino)).
 We’ll take a closer look at instructions and cycles ([AVR](/arduino/instruction-basics)) and then really 
 torture ourselves with disassembly, HEX opcodes, and low-level instruction analysis ([Instructions and Cycles](/arduino/instruction-loop-sample)).
-Extended HUGO to show tags sorted (thanks to ChatGPT), added navigation links, some images, aso
+Extended HUGO to show tags sorted (thanks to ChatGPT), added navigation links, some images, aso.
+Last but not least, [I²C](/electronics/i2c) got some attention 
 "
 ---
 

@@ -104,3 +104,15 @@ code {
   font-family: monospace;
   font-size: 0.8em;
 }
+
+section.article-content a::before {
+  color: orange;
+  content: "↗ ";
+}
+section.article-content a {
+  color: #A0A0A0;
+}
+section.article-content a:hover {
+  color: black;
+  font-weight: bolder;
+}

@@ -10,7 +10,7 @@ layout: article
 XType: design
 draft: false
 weight: 100
-categoryWeight: "020.001"
+categoryWeight: "020.020"
 ---
 ## Thinking Naively (and Breaking the Rules on Purpose)<br>
 Let’s ignore all best practices and architectural principles for a moment, and look at the software from a completely

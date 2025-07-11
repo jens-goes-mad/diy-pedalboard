@@ -66,6 +66,15 @@ torture ourselves with disassembly, HEX opcodes, and low-level instruction analy
 Extended HUGO to show tags sorted (thanks to ChatGPT), added navigation links, some images, aso.
 Last but not least, [I²C](/electronics/i2c) got some attention 
 "
+  - label: "2025-07-13"
+    title: "Arduino / I²C / LCD"
+    body: "
+Now it’s getting tough.
+We’re stepping back into 1991, into the world of cooperative and preemptive multitasking — concepts introduced 
+(and fought over) with Windows 3.11 and OS/2. We are talking about ancient history to drive a simple LCD display!
+Even something as simple as refreshing an [LCD over I²C](/arduino/i2c-basics) can teach us important lessons about timing, 
+blocking calls, and pretend working in parallel.
+"
 ---
 
 # DIY Pedal board timeline

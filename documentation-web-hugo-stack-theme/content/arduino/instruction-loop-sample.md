@@ -1,5 +1,5 @@
 ---
-title: Arduino Instructions
+title: ATmega328P Instructions
 # date: 2025-06-03
 layout: article
 draft: false
@@ -43,7 +43,7 @@ Basically, the program loops 3 million times, using a counter to stop execution 
 The if statement inside the loop is executed once and serves only one purpose: to prevent an empty loop.
 Without this, the compiler would detect that the loop does nothing and simply optimize it away.
 
-When you press Compile, the Arduino IDE generates:
+When you press Compile, the Arduino IDE generates files compatible to the processor used, here ATmega328P:
 
 * An ELF file: your compiled program, including debug information (like which lines generated which opcodes).
 * A HEX file: a stripped-down, minimal version that gets uploaded to your Nano.
@@ -103,7 +103,7 @@ Sometimes, the PC moves by 2 words (4 bytes) — for example when executing opco
 
 Similar to the AVR we will look at **3ca** next and see **SUB**.
 
-![Image: LDI](avr-sub.png)
+![Image: SUB](avr-sub.png)
 
 What happens here — <span class="cli-action">sub r12, r24</span> — is that the value in register **r24** is
 subtracted from the value in register **r12**, and the result is stored back into **r12**.

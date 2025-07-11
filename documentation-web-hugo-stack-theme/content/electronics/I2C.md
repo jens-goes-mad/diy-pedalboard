@@ -15,7 +15,7 @@ image: "I2C.jpeg"
 In the world of embedded systems and electronics, data communication between devices is crucial. 
 One of the oldest and most widely used methods for serial communication is UART — short for 
 Universal Asynchronous Receiver/Transmitter. It's simple, reliable, point-to-point communication, 
-built into almost every microcontroller.
+built into almost every microcontroller like the [arduino](/arduino/i2c-basics).
 
 UART is a hardware communication protocol that allows two devices to send and receive data serially, 
 one bit at a time over a single wire for transmission (TX) and one for receiving (RX). 

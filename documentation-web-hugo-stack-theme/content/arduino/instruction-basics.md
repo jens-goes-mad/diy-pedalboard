@@ -104,4 +104,5 @@ We’ll walk step by step through:
 * Connecting these numbers to real-world timing on your microcontroller
 
 Ready to turn theory into practice? Check out the next section: 
-[Instructions, Cycles, Estimations](/arduino/instruction-loop-sample).
+[Instructions, Cycles, Estimations](/arduino/instruction-loop-sample)
+or are you interested in [Arduino Nano Pin Out](/electronics/mcu#arduino-nano)?

@@ -16,10 +16,12 @@ categories: ["arduino"]
 
 I started with an 8-bit processor in the mid-80s on an 
 [Apple IIe](/design/electronic_circuits), marking my first deep dive into computing.
-Back then, I explored languages like Assembler and Pascal, slowly decoding the magic of opcodes, instructions, and CPU cycles.
+Back then, I explored languages like Assembler and Pascal, slowly decoding the magic of opcodes, instructions, 
+and CPU cycles.
 
 Now, nearly 40 years later, the circle has closed.
-I'm once again working with an 8-bit processor — this time on an Arduino Nano — rediscovering Assembler, playing with instructions and cycles just like I did when it all began.
+I'm once again working with an 8-bit processor — this time on an Arduino Nano — rediscovering Assembler, playing with 
+instructions and cycles just like I did when it all began.
 
 In today’s world, we all use technically brilliant touch devices from the age of two.
 But in that convenience, we often lose touch with the fundamentals — forgetting how these devices actually work under the hood.
@@ -27,6 +29,25 @@ At their core, nothing has fundamentally changed: only the size, speed, and powe
 
 I chose the Arduino Nano for this section because it’s far easier to set up and experiment with compared to using
 Visual Studio Code and the ESP-IDF toolchain for the final device.
+
+---
+
+As mentioned before, the electronics and Arduino chapters are closely related and often overlap.
+Working on a microcontroller doesn’t mean we’re just hacking around or playing. 
+In fact, applying solid software principles and good design practices is even more important here, 
+precisely because we’re dealing with limited resources.
+
+On a microcontroller, wasting cycles is strictly forbidden.
+That’s why careful software design, object-oriented development, and clear class hierarchies are critical 
+to creating efficient, reusable components.
+
+And last but not least — believe it or not — simply connecting an I²C LCD display to an Arduino can quickly 
+open the door to a full-blown 1991-style debate about cooperative versus preemptive multitasking.
+And it is the starting point to discus interrupts, context switches, and the eternal attempt to simulate parallel 
+work on a single-core processor.
+
+---
+
 
 ## Setup
 

@@ -89,6 +89,6 @@ and the number of microcontroller ports needed.
 
 ![I²C LCD controller](I2C_LCD.png)
 
-
 It’s simpler, cleaner, and makes the whole system far more scalable — exactly what our pedal board needs.
+And if you want to see it in action, see [Arduino + I²C + LCD + Multitasking](/arduino/i2c-basics) 
 

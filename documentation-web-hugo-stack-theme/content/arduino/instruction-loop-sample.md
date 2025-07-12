@@ -49,7 +49,7 @@ When you press Compile, the Arduino IDE generates files compatible to the proces
 * A HEX file: a stripped-down, minimal version that gets uploaded to your Nano.
 
 If you have AVR tools installed, you can easily disassemble the ELF file using:<br>
-<span class="cli-action">avr-objdump -d -C --source  /YOUR-DIR/your-program.ino.elf > disasm.txt</span>
+<span class="cli-action">avr-objdump -d -C /YOUR-DIR/your-program.ino.elf > disasm.txt</span>
 
 The file content will look like this:
 

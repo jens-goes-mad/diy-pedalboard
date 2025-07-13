@@ -6,7 +6,7 @@ summary: "
 Arduino and I²C + LCD displays and why delay() is strictly forbidden and we get rid of it by by millis()  
 "
 weight: 201
-image: "PB_I2C_LCD.jpg"
+image: "PB_I2C_LCD_no_delay.jpg"
 tags: ["hardware", "microcontroller", " I²C", "Arduino"]
 categories: ["arduino"]
 ---
@@ -128,5 +128,4 @@ and OOD (Object-Oriented Design). It’s time to introduce classes, encapsulate 
 we start thinking in components once again — just like we do with [hardware blocks](/design/hardware_components)
 or [overall goal](/prototyping/birds_view). But never forget [build fast, fail fast, no fear](/prototyping/fast_samples).
 
-TODO C++
-
+Now unpack it and we move from global variable mess to clean [classes and task](/arduino/i2c-task-mess) lists

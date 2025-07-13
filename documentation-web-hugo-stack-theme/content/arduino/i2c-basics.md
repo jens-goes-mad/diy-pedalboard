@@ -17,8 +17,18 @@ We already discussed the use of [I²C for driving LCD](/electronics/i2c) display
 sample [GitHub](https://github.com/jens-goes-mad/diy-pedalboard/tree/master/samples/ARDUINO_NANO/the-beginning/i2c/i2c_lcd_progressbar/i2c_lcd_progressbar.ino)
 which initializes the I²C and display a simple progress bar and measures overall run time.
 
-{{< video src="I2C-LCD-Arduino.mp4" type="video/mp4" autoplay="false" loop="false" >}}
+### Schematic
 
+The PCF8574 device is an 8-bit I/O expander designed for 2.5-V to 6-V VCC operation. 
+It provides general-purpose remote I/O expansion for most micro-controller families via the I²C
+interface (serial clock, SCL, and serial data, SDA, pins). 
+You can download the specification from [TI](https://www.ti.com/lit/ds/symlink/pcf8574.pdf?ts=1752376412454).
+
+![Arduino I2C + Port-Expander to drive LCDs
+https://avrhelp.mcselec.com/index.html?lcd_i2c_pcf8574.htm
+](I2C-LCD-schematic.jpg)
+
+### Software
 
     #include <Wire.h>
     #include <LiquidCrystal_I2C.h>
@@ -74,6 +84,10 @@ which initializes the I²C and display a simple progress bar and measures overal
         
         delay(10000);
     }
+
+### Result
+
+{{< video src="I2C-LCD-Arduino.mp4" type="video/mp4" autoplay="false" loop="false" >}}
 
 
 - When we look at the figures displayed on the LCD, we see a total runtime of 4,175.216 [ms].

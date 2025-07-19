@@ -48,7 +48,7 @@ through the crash and programs were saved on cassette correctly.
 Or back in 1991, when I tried to squeeze every last cycle out of my Casio FX-602P — my first programmable calculator.
 512 precious program steps. Solving a² + b = x equations on the fly, with hardware over-clocking.
 A time when no teacher had any idea what this little pocket genius could actually do 
-([prototyping - thinking out of the box](/prototyping/thinking_out_of_the_box/))
+([prototyping - thinking out of the box](/prototyping/thinking_outside_the_box/))
 "
   - label: "2025-06-31"
     title: "Electronics"
@@ -61,19 +61,20 @@ This is an introduction to upcoming topics like MIDI and Button Matrix devices
     title: "Arduino"
     body: "
 I’ve added a new section as an introduction to Arduino and 8-bit processors in general ([Arduino](/arduino)).
-We’ll take a closer look at instructions and cycles ([AVR](/arduino/instruction-basics)) and then really 
-torture ourselves with disassembly, HEX opcodes, and low-level instruction analysis ([Instructions and Cycles](/arduino/instruction-loop-sample)).
+We’ll take a closer look at instructions and cycles ([AVR](/arduino/avr/instruction-basics)) and then really 
+torture ourselves with disassembly, HEX opcodes, and low-level instruction analysis ([Instructions and Cycles](/arduino/avr/instruction-loop-sample)).
 Extended HUGO to show tags sorted (thanks to ChatGPT), added navigation links, some images, aso.
 Last but not least, [I²C](/electronics/i2c) got some attention 
 "
-  - label: "2025-07-13"
+  - label: "2025-07-18"
     title: "Arduino / I²C / LCD"
     body: "
 Now it’s getting tough.
 We’re stepping back into 1991, into the world of cooperative and preemptive multitasking — concepts introduced 
 (and fought over) with Windows 3.11 and OS/2. We are talking about ancient history to drive a simple LCD display!
-Even something as simple as refreshing an [LCD over I²C](/arduino/i2c-basics) can teach us important lessons about timing, 
-blocking calls, and pretend working in parallel.
+Even something as simple as refreshing an [LCD over I²C](/arduino/i2c/i2c-basics) can teach us important lessons about timing, 
+blocking calls, and pretend working in parallel. For this we start a refactoring from spaghetti to 
+[OOA, OOD, OOP related concepts](/arduino/i2c/i2c-task-mess/) and introduce [composition](/arduino/i2c/i2c-task-manager/)  
 "
 ---
 

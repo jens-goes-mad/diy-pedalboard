@@ -4,7 +4,8 @@ links:
   - title: Arduino IDE and NANO
     description: a blog about software and hardware development of a DIY pedal board
 menu:
-    main: 
+    main:
+        identifier: "arduino"
         weight: 60
         params:
             icon: cpu
@@ -109,4 +110,4 @@ Now setup board type (Arduino Nano), bootloader (old), port (cu*), programmer (A
 Open <span class="menu-action">File ⇒ Examples ⇒ 01.Basic ⇒ Blink</span>, compile and upload. 
 If you see a blinking on board LED we can enter the world of Instructions and Cycles!
 
-[Let's start with the basics](/arduino/instruction-basics).
+[Let's start with AVR basics](/arduino/avr).

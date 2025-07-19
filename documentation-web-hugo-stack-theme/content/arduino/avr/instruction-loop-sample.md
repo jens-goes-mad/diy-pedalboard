@@ -114,7 +114,7 @@ Whatever value was in **r12** before now gets reduced by one, and this updated v
 
 ## Cycles
 
-We’ve already explained the core concepts like [Processor Instructions and Cycles](/arduino/instruction-basics).
+We’ve already explained the core concepts like [Processor Instructions and Cycles](/arduino/avr/instruction-basics).
 
 ### OpCode Cycle Count (Theoretically)
 

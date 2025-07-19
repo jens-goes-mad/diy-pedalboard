@@ -6,7 +6,7 @@ summary: "
 Arduino and I²C + LCD displays using tasks  
 "
 weight: 205
-image: "PB_I2C_LCD_no_delay.jpg"
+image: "PB_I2C_LCD_task_mess.jpg"
 tags: ["hardware", "microcontroller", " I²C", "Arduino", "Tasks"]
 categories: ["arduino"]
 ---
@@ -14,7 +14,7 @@ categories: ["arduino"]
 
 ### Starting procedural
 
-In [Goodbye delay(), Hello millis()](/arduino/i2c-no-delay#goodbye-delay-hello-millis) I spread the idea of using time
+In [Goodbye delay(), Hello millis()](/arduino/i2c/i2c-no-delay#goodbye-delay-hello-millis) I spread the idea of using time
 based task execution instead of `delay()`. Now to demonstrate the disadvantages of global variables and `if else task`
 handling, even in simple programs consider the following sample. 
 
@@ -131,7 +131,9 @@ details behind a common interface.
 ### Starting with classes
 
 <span class="chatgpt">Please give a short summary: what is a class in object oriented software development</span>
-> "A class is a blueprint or template used to define objects in object-oriented programming (OOP). 
+<div class="chatgpt-response">
+
+> A class is a blueprint or template used to define objects in object-oriented programming (OOP). 
 > It describes what an object will contain and what it can do — that is, it defines its attributes (properties or data) and methods (functions or behaviors).
 > - When you create an object, you are creating an instance of a class
 > - The class specifies the structure and capabilities, while each object created from it can hold its own specific data
@@ -139,6 +141,8 @@ details behind a common interface.
 > - Enable encapsulation, meaning data and behavior are bundled together
 > - Support inheritance, allowing new classes to be based on existing ones
 > - Promote polymorphism, letting different classes implement shared interfaces in different ways"
+  
+</div>
 
 #### Abstract classes
 
@@ -327,3 +331,8 @@ While this overhead is real, it’s often acceptable — especially when the ben
 and reusability outweigh the raw performance loss. But in resource-constrained environments (like microcontrollers), 
 it’s always worth measuring and considering these trade-offs carefully.
 
+### Result
+
+{{< video src="I2C-LCD-tasks.mp4" type="video/mp4" autoplay="false" loop="false" >}}
+
+Next we move from tasks to one [Taskmanager](/arduino/i2c/i2c-task-manager)

@@ -128,4 +128,4 @@ and OOD (Object-Oriented Design). It’s time to introduce classes, encapsulate 
 we start thinking in components once again — just like we do with [hardware blocks](/design/hardware_components)
 or [overall goal](/prototyping/birds_view). But never forget [build fast, fail fast, no fear](/prototyping/fast_samples).
 
-Now unpack it and we move from global variable mess to clean [classes and task](/arduino/i2c-task-mess) lists
+Now unpack it and we move from global variable mess to clean [classes and task](/arduino/i2c/i2c-task-mess) lists

@@ -2,29 +2,63 @@
 {{- $context := .Context -}}
 {{- $pages := .Pages -}}
 
+
 {{- with (index .Context.Site.Params.widgets $scope) -}}
     <aside class="sidebar right-sidebar sticky">
         {{ range $widget := . }}
             {{ if templates.Exists (printf "partials/widget/%s.html" .type) }}
                 <!-- Ensure that the `params` is not nil -->
                 {{- $params := default dict .params -}}
-
                 {{ partial (printf "widget/%s" .type) (dict "Context" $context "Params" $params) }}
             {{ else }}
                 {{ warnf "Widget %s not found" .type }}
             {{ end }}
         {{ end }}
 
+        <div class="sidebar-siblings">
+        {{ $pagesWithoutParent := slice }}
+        {{ if and $pages (gt (len $pages) 0) }}
+            {{ $pagesWithoutParent := append $pages . }}
+            {{ $pagesWithoutParent := where $pagesWithoutParent "Params.parent" "ne" nil }}
+        {{ end }}
 
-        {{ if $pages }}
-            <div class="sidebar-siblings">
-                <h2>Topics</h2>
-                {{ range $pages }}
-                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                <p>{{ .Summary }}</p>
+        {{- $root := $context.FirstSection -}}
+        {{- $descendants := slice -}}
+        {{ if $root }}
+            {{ range $root.Pages }}
+                {{ $descendants = $descendants | append . }}
+            {{ end }}
+        {{ end }}
+
+        {{- $descendantsFiltered := slice -}}
+        {{ range $descendants }}
+            {{ if not (in $pages .) }}
+                {{ $descendantsFiltered = $descendantsFiltered | append . }}
+            {{ end }}
+        {{ end }}
+
+        {{ if and $pages (gt (len $pages) 0) }}
+            <h2>Similar Topics</h2>
+            {{ range $pages }}
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>
+                {{ with .Params.links }}
+                    {{ range . }}
+                        {{ $link := . }}
+                        {{ if $link.title }}
+                            {{ $link.title }}
+                        {{ else }}
+                            {{ $link.description | default "No description" }}
+                        {{ end }}
+                    {{ end }}
+                {{ else }}
+                    {{ .Summary }}
                 {{ end }}
-            </div>
-        {{ else }}
+            </p>
+            {{ end }}
+        {{ end }}
+
+        {{ if not $pages }}
             {{- $current := $context -}}
             {{- $siblings := slice -}}
 
@@ -34,16 +68,37 @@
                 {{ $siblings = where (where $context.Site.RegularPages "Section" $current.Section) "RelPermalink" "ne" $current.RelPermalink }}
             {{ end }}
 
+            {{ $descendantsFiltered = partial "slice/difference" (dict "A" $descendantsFiltered "B" $siblings) }}
+
             {{ if gt (len $siblings) 0 }}
-            <div class="sidebar-siblings">
-                <h2>More in this section</h2>
+            <h2>More in this section</h2>
                 {{ range $siblings }}
-                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                <p>{{ .Summary }}</p>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Summary }}</p>
                 {{ end }}
-            </div>
             {{ end }}
         {{ end }}
 
+        {{ if $descendantsFiltered }}
+            <h2>Chapters</h2>
+            {{ range $descendantsFiltered }}
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>
+                {{ with .Params.links }}
+                    {{ range . }}
+                        {{ $link := . }}
+                        {{ if $link.title }}
+                            {{ $link.title }}
+                        {{ else }}
+                            {{ $link.description | default "No description" }}
+                        {{ end }}
+                    {{ end }}
+                {{ else }}
+                    {{ .Summary }}
+                {{ end }}
+            </p>
+            {{ end }}
+        {{ end }}
+        </div>
     </aside>
 {{ end }}

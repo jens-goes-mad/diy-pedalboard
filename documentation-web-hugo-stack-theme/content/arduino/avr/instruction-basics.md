@@ -10,26 +10,10 @@ image: "PB_Processors.jpg"
 tags: ["hardware", "microcontroller", "AVR", "Arduino"]
 categories: ["arduino"]
 ---
-## Processor basics
-
-We won’t dive into the mysteries of electronics — no transistors, resistors, gates, or logic circuits today.
-We’ll treat all that as given and jump straight into the fun part: how a processor works.
-
-The ATmega328P is an 8-bit microcontroller from Microchip (originally Atmel), part of the AVR family.
-It uses a modified Harvard architecture, which means it has separate memories and buses for program and data.
-This allows for simultaneous access and enables faster, more efficient processing.
-
-Key features:
-* 8-bit RISC architecture (Reduced Instruction Set Computer).
-* 32 general-purpose working registers.
-* Around 130 Opcodes (Instructions)
-* Single-level pipeline (single core).
-* Operating clock frequency is typically 16 MHz.
-
 ## Introduction to Timing Concepts
 
-Understanding how a microcontroller operates starts with four fundamental concepts: clock, clock speed, instructions, 
-and instruction cycles. These ideas form the foundation for how all digital processors — including microcontrollers 
+Understanding how a microcontroller operates starts with four fundamental concepts: clock, clock speed, instructions,
+and instruction cycles. These ideas form the foundation for how all digital processors — including microcontrollers
 like the ATmega328P — actually execute code and turn instructions into real-world actions.
 
 ### The Clock
@@ -83,7 +67,7 @@ For example:
 
 This predictable timing is crucial for real-time and performance-critical applications.
 
-### Why It Matters
+## Why It Matters
 
 Knowing how clocks, speeds, and instructions work helps you:
 > Optimize loops for performance<br>
@@ -104,5 +88,5 @@ We’ll walk step by step through:
 * Connecting these numbers to real-world timing on your microcontroller
 
 Ready to turn theory into practice? Check out the next section: 
-[Instructions, Cycles, Estimations](/arduino/instruction-loop-sample)
+[Instructions, Cycles, Estimations](/arduino/avr/instruction-loop-sample)
 or are you interested in [Arduino Nano Pin Out](/electronics/mcu#arduino-nano)?

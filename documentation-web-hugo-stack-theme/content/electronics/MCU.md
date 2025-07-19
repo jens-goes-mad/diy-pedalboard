@@ -64,9 +64,9 @@ Here’s a quick breakdown of what these pins can do:
 
 Now that we’ve scratched the surface of an Arduino, you have multiple options to continue reading:
 - [Arduino](/arduino) overview to get a more basic Arduino foundation
-- [Arduino Processor basics](/arduino/instruction-basics) take a deeper dive into the language of an AVR — the processor
+- [Arduino Processor basics](/arduino/avr/instruction-basics) take a deeper dive into the language of an AVR — the processor
   at the heart of an Arduino Nano
-- [AVR Cycles, Opcodes, Instructions](/arduino/instruction-loop-sample) In that deep dive, you’ll learn how to
+- [AVR Cycles, Opcodes, Instructions](/arduino/avr/instruction-loop-sample) In that deep dive, you’ll learn how to
   disassemble a high-level C++ program, and even decipher raw opcodes and instructions
 
 ---

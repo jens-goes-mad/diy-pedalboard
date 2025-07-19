@@ -194,4 +194,4 @@ which we’ll use later for the UI. And it has one major advantage:
 
 > No concurrency issues, no threads, no locks, no synchronize, no extra complexity — it all just disappears.
 
-Follow up: [Goodbye delay(), Hello millis()](/arduino/i2c-no-delay)
+Follow up: [Goodbye delay(), Hello millis()](/arduino/i2c/i2c-no-delay)

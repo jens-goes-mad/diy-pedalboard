@@ -76,6 +76,11 @@ Even something as simple as refreshing an [LCD over I²C](/arduino/i2c/i2c-basic
 blocking calls, and pretend working in parallel. For this we start a refactoring from spaghetti to 
 [OOA, OOD, OOP related concepts](/arduino/i2c/i2c-task-mess/) and introduce [composition](/arduino/i2c/i2c-task-manager/)  
 "
+  - label: "2025-07-20"
+    title: "me and legal"
+    body: "
+Added the [me page](/me) and final notice stuff (sigh)
+"
 ---
 
 # DIY Pedal board timeline

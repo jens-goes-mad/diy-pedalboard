@@ -13,7 +13,7 @@ toc: true
 tags: ["hardware", "arduino"]
 categories: ["arduino"]
 ---
-# ARDUINO and I²C
+# Arduino and I²C
 
 I²C, short for Inter-Integrated Circuit, is a serial communication protocol that allows multiple devices 
 to communicate using just two wires — one for data (SDA) and one for clock (SCL). Originally developed by Philips 

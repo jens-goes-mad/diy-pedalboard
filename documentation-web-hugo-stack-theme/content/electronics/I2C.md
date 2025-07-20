@@ -1,5 +1,5 @@
 ---
-title: "I2C"
+title: "I²C"
 # date: 2025-06-03
 layout: article
 draft: false
@@ -10,12 +10,12 @@ weight: 100
 categoryWeight: "250.300"
 image: "I2C.jpeg"
 ---
-## From UART to I2C
+## From UART to I²C
 
 In the world of embedded systems and electronics, data communication between devices is crucial. 
 One of the oldest and most widely used methods for serial communication is UART — short for 
 Universal Asynchronous Receiver/Transmitter. It's simple, reliable, point-to-point communication, 
-built into almost every microcontroller like the [arduino](/arduino/i2c-basics).
+built into almost every microcontroller like the [arduino](/arduino/i2c/i2c-basics).
 
 UART is a hardware communication protocol that allows two devices to send and receive data serially, 
 one bit at a time over a single wire for transmission (TX) and one for receiving (RX). 
@@ -23,7 +23,7 @@ Unlike protocols like I²C or SPI, UART doesn't use a clock line.
 Instead, it works asynchronously, meaning both devices must agree on the communication speed beforehand 
 (called the baud rate).
 
-## I2C
+## I²C
 
 In the world of embedded systems and electronics, efficient communication between components is essential. 
 One protocol that has become a standard for short-distance, low-speed data exchange is I²C (Inter-Integrated Circuit). 
@@ -90,5 +90,5 @@ and the number of microcontroller ports needed.
 ![I²C LCD controller](I2C_LCD.png)
 
 It’s simpler, cleaner, and makes the whole system far more scalable — exactly what our pedal board needs.
-And if you want to see it in action, see [Arduino + I²C + LCD + Multitasking](/arduino/i2c-basics) 
+And if you want to see it in action, see [Arduino + I²C + LCD + Multitasking](/arduino/i2c/i2c-basics) 
 

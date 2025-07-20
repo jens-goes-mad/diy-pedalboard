@@ -14,7 +14,7 @@ tags: ["hardware", "arduino", "AVR"]
 categories: ["arduino"]
 ---
 
-# AVR
+# Arduino and AVR
 
 We won’t dive into the mysteries of electronics — no transistors, resistors, gates, or logic circuits today.
 We’ll treat all that as given and jump straight into the fun part: how a processor works.

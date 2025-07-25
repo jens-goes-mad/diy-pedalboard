@@ -2,7 +2,6 @@
 {{- $context := .Context -}}
 {{- $pages := .Pages -}}
 
-
 {{- with (index .Context.Site.Params.widgets $scope) -}}
     <aside class="sidebar right-sidebar sticky">
         {{ range $widget := . }}
@@ -15,6 +14,7 @@
             {{ end }}
         {{ end }}
 
+    {{ if $pages }}
         <div class="sidebar-siblings">
         {{ $pagesWithoutParent := slice }}
         {{ if and $pages (gt (len $pages) 0) }}
@@ -100,5 +100,6 @@
             {{ end }}
         {{ end }}
         </div>
+    {{ end }}
     </aside>
 {{ end }}

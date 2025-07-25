@@ -31,10 +31,10 @@ linking two machines with Token Ring networks, and wrestling daily with matrix p
 
 In `1997`, I worked on digitizing the Frankfurt Book Fair, building a cross-platform UI for Mac and PC long before Java 
 was viable for real production. That led to my first encounter with cross-compiled C++, XVT/XVTDSC, 
-and building a compact, blazing-fast read-only database — years before Elasticsearch existed.
+and using a compact, blazing-fast read-only database build by my college — years before Elasticsearch existed.
 
 `1999` At Deutsche Bahn, I helped tackle the wildly complex problem of optimal group seating on trains.
-- EJBs on a quad core server!
+- with EJBs on a quad core server! And VisualAge, a tool ahead of it's time until IBM screwed it.
 
 Then came the-object-company, where we developed autonomous warrant trading systems for Dresdner Bank in `2001`, 
 with blinking real-time Swing UIs on top of JMS, BEA WebLogic, and EJBs (yes, those EJBs).
@@ -43,14 +43,14 @@ with blinking real-time Swing UIs on top of JMS, BEA WebLogic, and EJBs (yes, th
 - Fought Nightmares like SimpleDateFormat not being thread-safe
 - Server and Clientside development
 
-In `2003`, I joined one of the largest projects of my career — building multi-channel banking architectures 
+In `2003`, I joined one of the largest projects of my career — building multi-channel banking architectures for Postbank
 spanning internal UIs, call-center tools, public websites, and huge middleware systems for credit cards, 
 loans, and external credit checks (Schufa, InFoScore - sigh).
 Overall we build hugh service layers to combine shadow databases and SAP and introduced configurable process engines 
 all in 
 - JAVA, EJBs
 - some Cobol, BTX
-- SAP...
+- SAP R3 (Banking) ... and UML
 
 `2006` I started building a custom Swing-based SQL editor for Depfa Bank’s Summit platform, 
 automating UI generation from hundreds of database tables to display and edit 1:1, 1:n, n:m relations properly.
@@ -69,7 +69,7 @@ We jumped on the first stable libraries and frameworks like:
 - iReport
 
 In parallel around `2008`, the shopping clubs sprout like mushrooms from the ground, so did Brands4Friends.
-Due to the nature of their marketing, campaign driven model, their servers in canada crashed regularly when the sold
+Due to the nature of their marketing, campaign driven model, their servers in canada crashed regularly when they sold
 some Gucci Article at 50% discount. At that time the first version of an high-performance Terracotta driven shop  
 cluster was up and running after 3 month, written by 3 developers, no more overselling, no more crashed. 
 I was responsible for the entire architecture / development of the shop and later integration in the inventory 
@@ -81,6 +81,9 @@ management and payment system.
 - Terracotta, JMS-via-Terracotta
 - Maven, Tapestry 5, Spring, Hibernate, HSQL, MySQL 
 - Testframework, Quartz, JMeter, Hyperic, Rest API
+- No judgment, but using high-resolution images of Miss Switzerland in Victoria's Secret apparel as our test data may 
+  have been our most… motivating QA decision ever. Needless to say, that release was tested more thoroughly than 
+  any before it.
 
 We built platforms for:
 - fashion-and-you (Suisse)
@@ -104,7 +107,13 @@ physical servers back then, which you'd spin up on EKS today. Tools like Hazelca
 
 And in `2014` it started like it began. In 2014, I joined gd-inside, a small, focused team providing regulatory and 
 backend services to financial institutions from Valuation Prices, Arrival Prices or Transaction Cost calculation.
-Till today.
+Till today. And now I love to work in fields like
+- Apache Camel, JavaScript ChartLibs, JDBC driver based on JSONs, Trick JasperReports, Postgres in Kiosk Mode, 
+  MongoDb Audit-trails with Playback and so much more...
+- Java, Python, Dart, C++
+- Docker, Docker, Docker and RestAPIs in R, Python, Java, C++ (don't ask).
+- AI Tools e.g. AWS Textract, AWS NovaLite, ChatGPT API, ChatGPT Agents, Prompts
+- Six Financial, WM, FactSet, TTM0, AVS, Bloomberg
 
 ----
 

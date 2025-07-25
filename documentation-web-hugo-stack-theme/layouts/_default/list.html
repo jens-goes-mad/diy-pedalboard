@@ -40,8 +40,7 @@
                             {{- $Width = $thumbnail.Width -}}
                             {{- $Height = $thumbnail.Height -}}
                         {{- end -}}
-                        
-                        <img src="{{ $Permalink }}" 
+                        <img src="{{ $Permalink }}"
                             width="{{ $Width }}"
                             height="{{ $Height }}" 
                             loading="lazy">
@@ -102,9 +101,11 @@
     {{ $paginator := .Paginate $pages }}
 
     <section class="article-list">  <!-- article-list--compact -->
-        {{ range $paginator.Pages }}
-            {{ partial "article-list/default" . }}
-        {{ end }}
+    {{ range $paginator.Pages }}
+        {{ .Scratch.Set "article-list" true }}
+        {{ partial "article-list/default" . }}
+        {{ .Scratch.Delete "article-list" }}
+    {{ end }}
     </section>
 
     {{- partial "pagination.html" . -}}

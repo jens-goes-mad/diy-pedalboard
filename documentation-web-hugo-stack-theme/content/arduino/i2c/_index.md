@@ -9,9 +9,16 @@ menu:
         weight: 70
         params:
             icon: cpu
+summary: "
+I²C, short for Inter-Integrated Circuit, is a serial communication protocol that allows multiple devices 
+to communicate using just two wires — one for data (SDA) and one for clock (SCL). Originally developed by Philips 
+(now NXP)
+"
 toc: true
 tags: ["hardware", "arduino"]
 categories: ["arduino"]
+image: "I2C.jpeg"
+imageSuppress: "Page"
 ---
 # Arduino and I²C
 

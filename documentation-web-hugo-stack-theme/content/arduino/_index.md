@@ -12,6 +12,8 @@ menu:
 toc: true
 tags: ["hardware", "arduino"]
 categories: ["arduino"]
+image: "ARDUINO.jpg"
+imageSuppress: "Page"
 ---
 # ARDUINO
 

@@ -3,8 +3,7 @@ title: "Design hardware (components)"
 summary: "
 From Bird’s Eye to Building Blocks, or: how to analyze the device from the outside in — looking at the front, 
 the rear, the buttons, the I/O, and collecting real-world requirements not just from specs, but from how the user 
-interacts with it. This perspective helps identify natural components and responsibilities — even before the 
-first line of code is written.
+interacts with it.
 "
 date: 2025-06-01
 layout: article
@@ -12,6 +11,7 @@ draft: false
 weight: 110
 image: "ChatGPT_Hardware_mess.png"
 categoryWeight: "010.002"
+imageSuppress: "Page"
 ---
 ## From Bird's Eye to Building Blocks
 
@@ -122,4 +122,4 @@ This approach is not only great for rapid development, but also perfect for debu
 or designing the UI while waiting for the soldering iron to cool down.
 
 
-[Time to solder! Or better simulate first](/design/electronic_circuits).
+[Time to solder! Or better simulate first](/design/electronic_circuits#breadboard-and-simulation).

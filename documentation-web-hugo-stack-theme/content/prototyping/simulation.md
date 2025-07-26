@@ -60,4 +60,178 @@ First, let’s put our AI companion to work, burning a bit of fossil energy to s
 I’ve polished the entire conversation into a [PDF](ChatGPT-JavaFX_program_example.pdf), but honestly, 
 it only took four well-placed questions to get the initial “single display” simulator app up and running, with maven.
 
+### From Arduino C++ to JavaFX
+
+Remember how we used a C++ lib to access the [LCD](/arduino/i2c/i2c-task-mess#result) from our Microcontroller?
+The functions we [used](https://github.com/jens-goes-mad/diy-pedalboard/tree/master/samples/ARDUINO_NANO/the-beginning/i2c/i2c_lcd_hello) 
+where `setCursor(0, 0)` or `print("Hello, World!!")`. 
+
+#### JavaFX classes
+
+A JavaFX independent 
+[Java interface](https://github.com/jens-goes-mad/diy-pedalboard/blob/master/samples/JAVA/the-beginning/lcd-display-with-wrapper-chatgpt/src/main/java/de/diy_pedalboard/controls/ILcdDisplay.java) 
+could be:
+
+    package de.diy_pedalboard.controls;
+
+    public interface ILcdDisplay
+    {
+        void clear();
+        void setCursor(final int col, final int row);
+        void print(final String text);
+    }
+
+and the [implementation](https://github.com/jens-goes-mad/diy-pedalboard/blob/master/samples/JAVA/the-beginning/lcd-display-with-wrapper-chatgpt/src/main/java/de/diy_pedalboard/controls/JavaFXLCDDisplay.java)
+like this:
+
+    package de.diy_pedalboard.controls;
+  
+    @Accessors(prefix = "_")
+    public class JavaFXLCDDisplay
+        extends VBox
+        implements ILcdDisplay
+    {
+        ...
+        public JavaFXLCDDisplay(final int fontHeight)
+        {
+            super(VBOX_SPACING);
+    
+            final Font customFont = Font.loadFont(
+                getClass().getResourceAsStream("/LCD5x7SegmentMonospace-Regular.otf"), fontHeight
+            );
+    
+            final Text oneChar = new Text("A");
+            oneChar.setFont(customFont);
+    
+            _screenWidth = oneChar.getLayoutBounds().getWidth() * 20 + 2 * PADDING;
+            setMinWidth(_screenWidth);
+            setMaxWidth(_screenWidth);
+            _screenHeight = oneChar.getLayoutBounds().getHeight() * 4 + 2 * PADDING + 3 * VBOX_SPACING;
+            setMinHeight(_screenHeight);
+            setMaxHeight(_screenHeight);
+            setStyle("-fx-background-color: blue; -fx-padding: " + PADDING + "px; -fx-border-radius: 0px; -fx-background-radius: 0px;");
+    
+            for (int i = 0; i < ROWS; i++) {
+                final Text text = new Text(" ".repeat(COLS));
+                text.setFont(customFont);
+    
+                _textRows[i] = text;
+                _textRows[i].setFill(Color.WHITE);
+    
+                getChildren().add(_textRows[i]);
+                _rowData[i] = new StringBuilder(" ".repeat(COLS));
+            }
+        }
+  
+        @Override
+        public void clear()
+        {
+            for (int i = 0; i < ROWS; i++) {
+                _rowData[i] = new StringBuilder(" ".repeat(COLS));
+                _textRows[i].setText(_rowData[i].toString());
+            }
+            _cursorRow = 0;
+            _cursorCol = 0;
+        }
+
+        @Override
+        public void setCursor(int col, int row)
+        {
+            if (row >= 0 && row < ROWS && col >= 0 && col < COLS) {
+                _cursorRow = row;
+                _cursorCol = col;
+            }
+        }
+
+        @Override
+        public void print(final String text)
+        {
+            int r = _cursorRow;
+            int c = _cursorCol;
+    
+            for (char ch : text.toCharArray()) {
+                if (r >= ROWS) break;
+    
+                if (c < COLS) {
+                    _rowData[r].setCharAt(c, ch);
+                    c++;
+                } else {
+                    r++;
+                    if (r >= ROWS) break;
+                    c = 0;
+                    _rowData[r].setCharAt(c, ch);
+                    c++;
+                }
+            }
+    
+            for (int i = 0; i < ROWS; i++) {
+                _textRows[i].setText(_rowData[i].toString());
+            }
+    
+            _cursorRow = r;
+            _cursorCol = c;
+          }
+    }
+
+In a typical JavaFX application, the `main()` method launches the JavaFX runtime, which calls the `start(Stage primaryStage)` 
+method. Within `start()`, the program creates an LcdDisplay (or any other node), adds it to a Scene, 
+and sets that scene on the Stage. The Scene represents the JavaFX UI hierarchy, 
+while the Stage acts as the top-level window provided by the operating system.
+
+    public class MainSingle
+        extends Application
+    {
+        @Override
+        public void start(final Stage primaryStage)
+        {
+            final JavaFXLCDDisplay display = new JavaFXLCDDisplay();
+    
+            display.setCursor(0, 0);
+            display.print("Hello World");
+    
+            display.setCursor(5, 1);
+            display.print("LCD via interface");
+    
+            display.setCursor(0, 3);
+            display.print("Line 4 starts here");
+    
+            final Scene scene = new Scene(display, display.getScreenWidth(), display.getScreenHeight());
+            primaryStage.setTitle("LCD Display Demo");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        }
+    
+        public static void main(final String[] args) 
+        {
+            launch(args);
+        }
+    }
+
+#### Run via IntelliJ
+
+Now we can run it by creating a Intellij run config and press start:
+
+![run config](idea-run-config.jpg)
+
+JavaFX requires some lengthy VM settings:
+
+    --module-path <YOUR_INSTALLATION_DIR>/javafx-sdk-21.0.8/lib 
+    --add-modules javafx.controls,javafx.fxml 
+    --enable-native-access=ALL-UNNAMED
+
+#### Run by Maven
+
+To compile type `mvn clean install`<br>
+To run `mvn javafx:run`<br>
+and you get:<br>
+
+![most basic Simulator up and running](JavaFX-one-LCD.jpg)
+
+## Downloads
+
+You can download [javafx-sdk-xx.y.z](https://gluonhq.com/products/javafx/) and 
+[SceneBuilder](https://gluonhq.com/products/scene-builder/) from Gluon
+and [JDK](https://bell-sw.com/pages/downloads/#jdk-21-lts) from Bellsoft.
+
+
 

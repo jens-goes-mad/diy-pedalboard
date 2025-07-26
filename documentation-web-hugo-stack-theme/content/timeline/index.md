@@ -26,18 +26,45 @@ don't be scared, you can use HUGO without account), the HUGO Stack theme (https:
 — and that’s what you’re reading right now. Naturally, when you get familiar with such a system you start to develop
 your own templates. You can see progress (or not) on github
 (https://github.com/jens-goes-mad/diy-pedalboard/tree/master/documentation-web-hugo-stack-theme)"
-  - label: "2025-06-01"
-    title: "Added some docs around ChatGPT"
+  - label: "2025-07-26"
+    title: "Simulation, Hands on (well, ChatGPT did it)"
     body: "
-ChatGPT is such a powerful tool, so there is a section particular for [ChatGPT](/chatgpt) demonstrating usage and results.
-But you can also spend time in useless comment sections and non-working iframes from cusdis (https://cusdis.com)
+First time we are talking about [Simulation](/prototyping/simulation) and really simulated LCDs with JavaFX. 
+We learned things about [TrueType Fonts](/tools/visuals#truetype-fonts) and why Software development is more than an IDE.
+Never forget all the [tools](/tools) like [images, diagrams](/tools/visuals) to present a proper blog. But there is
+much more to experience like 2D / 3D modeling, PCB, a.s.o 
 "
-  - label: "2025-06-04"
-    title: "Added 'Form follows Function' section"
-    body: ""
-  - label: "2025-06-13"
-    title: "Added 'Prototype' section and polished text and images in general"
-    body: ""
+  - label: "2025-07-20"
+    title: "me and legal"
+    body: "
+Added the [me page](/me) and final notice stuff (sigh)
+"
+  - label: "2025-07-18"
+    title: "Arduino / I²C / LCD"
+    body: "
+Now it’s getting tough.
+We’re stepping back into 1991, into the world of cooperative and preemptive multitasking — concepts introduced 
+(and fought over) with Windows 3.11 and OS/2. We are talking about ancient history to drive a simple LCD display!
+Even something as simple as refreshing an [LCD over I²C](/arduino/i2c/i2c-basics) can teach us important lessons about timing, 
+blocking calls, and pretend working in parallel. For this we start a refactoring from spaghetti to 
+[OOA, OOD, OOP related concepts](/arduino/i2c/i2c-task-mess/) and introduce [composition](/arduino/i2c/i2c-task-manager/)  
+"
+  - label: "2025-07-06"
+    title: "Arduino"
+    body: "
+I’ve added a new section as an introduction to Arduino and 8-bit processors in general ([Arduino](/arduino)).
+We’ll take a closer look at instructions and cycles ([AVR](/arduino/avr/instruction-basics)) and then really 
+torture ourselves with disassembly, HEX opcodes, and low-level instruction analysis ([Instructions and Cycles](/arduino/avr/instruction-loop-sample)).
+Extended HUGO to show tags sorted (thanks to ChatGPT), added navigation links, some images, aso.
+Last but not least, [I²C](/electronics/i2c) got some attention 
+"
+  - label: "2025-06-31"
+    title: "Electronics"
+    body: "
+Added a new Section as introduction to electronics in general, and how to burn fingers, while soldering.
+This is an introduction to upcoming topics like MIDI and Button Matrix devices 
+([design - electronics](/design/electronic_circuits)).
+"
   - label: "2025-06-21"
     title: "Déjà Vu and LCD Displays, Tiles and more"
     body: "
@@ -50,45 +77,19 @@ Or back in 1991, when I tried to squeeze every last cycle out of my Casio FX-602
 A time when no teacher had any idea what this little pocket genius could actually do 
 ([prototyping - thinking out of the box](/prototyping/thinking_outside_the_box/))
 "
-  - label: "2025-06-31"
-    title: "Electronics"
+  - label: "2025-06-13"
+    title: "Added 'Prototype' section and polished text and images in general"
+    body: ""
+  - label: "2025-06-04"
+    title: "Added 'Form follows Function' section"
+    body: ""
+  - label: "2025-06-01"
+    title: "Added some docs around ChatGPT"
     body: "
-Added a new Section as introduction to electronics in general, and how to burn fingers, while soldering.
-This is an introduction to upcoming topics like MIDI and Button Matrix devices 
-([design - electronics](/design/electronic_circuits)).
+ChatGPT is such a powerful tool, so there is a section particular for [ChatGPT](/chatgpt) demonstrating usage and results.
+But you can also spend time in useless comment sections and non-working iframes from cusdis (https://cusdis.com)
 "
-  - label: "2025-07-06"
-    title: "Arduino"
-    body: "
-I’ve added a new section as an introduction to Arduino and 8-bit processors in general ([Arduino](/arduino)).
-We’ll take a closer look at instructions and cycles ([AVR](/arduino/avr/instruction-basics)) and then really 
-torture ourselves with disassembly, HEX opcodes, and low-level instruction analysis ([Instructions and Cycles](/arduino/avr/instruction-loop-sample)).
-Extended HUGO to show tags sorted (thanks to ChatGPT), added navigation links, some images, aso.
-Last but not least, [I²C](/electronics/i2c) got some attention 
-"
-  - label: "2025-07-18"
-    title: "Arduino / I²C / LCD"
-    body: "
-Now it’s getting tough.
-We’re stepping back into 1991, into the world of cooperative and preemptive multitasking — concepts introduced 
-(and fought over) with Windows 3.11 and OS/2. We are talking about ancient history to drive a simple LCD display!
-Even something as simple as refreshing an [LCD over I²C](/arduino/i2c/i2c-basics) can teach us important lessons about timing, 
-blocking calls, and pretend working in parallel. For this we start a refactoring from spaghetti to 
-[OOA, OOD, OOP related concepts](/arduino/i2c/i2c-task-mess/) and introduce [composition](/arduino/i2c/i2c-task-manager/)  
-"
-  - label: "2025-07-20"
-    title: "me and legal"
-    body: "
-Added the [me page](/me) and final notice stuff (sigh)
-"
-  - label: "2025-07-26"
-    title: "Simulation, Hands on (well, ChatGPT did it)"
-    body: "
-First time we are talking about [Simulation](/prototyping/simulation) and really simulated LCDs with JavaFX. 
-We learned things about [TrueType Fonts](/tools/visuals#truetype-fonts) and why Software development is more than an IDE.
-Never forget all the [tools](/tools) like [images, diagrams](/tools/visuals) to present a proper blog. But there is
-much more to experience like 2D / 3D modeling, PCB, a.s.o 
-"
+
 ---
 
 # DIY Pedal board timeline

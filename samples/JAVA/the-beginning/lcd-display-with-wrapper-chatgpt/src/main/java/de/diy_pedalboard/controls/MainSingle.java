@@ -12,14 +12,14 @@ public class MainSingle
     {
         final JavaFXLCDDisplay display = new JavaFXLCDDisplay();
 
-        display.setPosition(0, 0);
-        display.write("Hello World");
+        display.setCursor(0, 0);
+        display.print("Hello World");
 
-        display.setPosition(5, 1);
-        display.write("LCD via interface");
+        display.setCursor(5, 1);
+        display.print("LCD via interface");
 
-        display.setPosition(0, 3);
-        display.write("Line 4 starts here");
+        display.setCursor(0, 3);
+        display.print("Line 4 starts here");
 
         final Scene scene = new Scene(display, display.getScreenWidth(), display.getScreenHeight());
         primaryStage.setTitle("LCD Display Demo");
@@ -27,7 +27,7 @@ public class MainSingle
         primaryStage.show();
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         launch(args);
     }
 }

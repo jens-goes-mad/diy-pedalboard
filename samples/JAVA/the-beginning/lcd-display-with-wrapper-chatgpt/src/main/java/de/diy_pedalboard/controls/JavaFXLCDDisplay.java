@@ -17,11 +17,11 @@ public class JavaFXLCDDisplay
     private static final int VBOX_SPACING = 10;
     private static final int PADDING = 10;
 
-    private final Text[] textRows = new Text[ROWS];
-    private final StringBuilder[] rowData = new StringBuilder[ROWS];
+    private final Text[] _textRows = new Text[ROWS];
+    private final StringBuilder[] _rowData = new StringBuilder[ROWS];
 
-    private int cursorRow = 0;
-    private int cursorCol = 0;
+    private int _cursorRow = 0;
+    private int _cursorCol = 0;
 
     @Getter private final double _screenWidth;
     @Getter private final double _screenHeight;
@@ -54,11 +54,11 @@ public class JavaFXLCDDisplay
             final Text text = new Text(" ".repeat(COLS));
             text.setFont(customFont);
 
-            textRows[i] = text;
-            textRows[i].setFill(Color.WHITE);
+            _textRows[i] = text;
+            _textRows[i].setFill(Color.WHITE);
 
-            getChildren().add(textRows[i]);
-            rowData[i] = new StringBuilder(" ".repeat(COLS));
+            getChildren().add(_textRows[i]);
+            _rowData[i] = new StringBuilder(" ".repeat(COLS));
         }
     }
 
@@ -66,48 +66,48 @@ public class JavaFXLCDDisplay
     public void clear()
     {
         for (int i = 0; i < ROWS; i++) {
-            rowData[i] = new StringBuilder(" ".repeat(COLS));
-            textRows[i].setText(rowData[i].toString());
+            _rowData[i] = new StringBuilder(" ".repeat(COLS));
+            _textRows[i].setText(_rowData[i].toString());
         }
-        cursorRow = 0;
-        cursorCol = 0;
+        _cursorRow = 0;
+        _cursorCol = 0;
     }
 
     @Override
-    public void setPosition(int col, int row)
+    public void setCursor(int col, int row)
     {
         if (row >= 0 && row < ROWS && col >= 0 && col < COLS) {
-            cursorRow = row;
-            cursorCol = col;
+            _cursorRow = row;
+            _cursorCol = col;
         }
     }
 
     @Override
-    public void write(final String text)
+    public void print(final String text)
     {
-        int r = cursorRow;
-        int c = cursorCol;
+        int r = _cursorRow;
+        int c = _cursorCol;
 
         for (char ch : text.toCharArray()) {
             if (r >= ROWS) break;
 
             if (c < COLS) {
-                rowData[r].setCharAt(c, ch);
+                _rowData[r].setCharAt(c, ch);
                 c++;
             } else {
                 r++;
                 if (r >= ROWS) break;
                 c = 0;
-                rowData[r].setCharAt(c, ch);
+                _rowData[r].setCharAt(c, ch);
                 c++;
             }
         }
 
         for (int i = 0; i < ROWS; i++) {
-            textRows[i].setText(rowData[i].toString());
+            _textRows[i].setText(_rowData[i].toString());
         }
 
-        cursorRow = r;
-        cursorCol = c;
+        _cursorRow = r;
+        _cursorCol = c;
     }
 }

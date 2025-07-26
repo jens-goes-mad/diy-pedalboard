@@ -36,8 +36,8 @@ public class MainFourInOneRow
             final JavaFXLCDDisplay display = displays[i];
             hbox.getChildren().add(display);
 
-            display.setPosition(0, 0);
-            display.write("Display: " + i);
+            display.setCursor(0, 0);
+            display.print("Display: " + i);
         }
 
         final Scene scene = new Scene(hbox, w, h);

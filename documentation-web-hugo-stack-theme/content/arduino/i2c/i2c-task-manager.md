@@ -7,7 +7,7 @@ Arduino and I²C + LCD displays using a task manager
 "
 weight: 206
 image: "PB_I2C_LCD_taskmanager.jpg"
-tags: ["hardware", "microcontroller", " I²C", "Arduino", "Tasks"]
+tags: ["hardware", "microcontroller", "I2C", "Arduino", "Tasks"]
 categories: ["arduino"]
 ---
 ## Goodbye Spaghetti, Hello Task Manager!

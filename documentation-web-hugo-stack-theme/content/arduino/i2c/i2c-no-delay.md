@@ -7,7 +7,7 @@ Arduino and I²C + LCD displays and why delay() is strictly forbidden and we get
 "
 weight: 201
 image: "PB_I2C_LCD_no_delay.jpg"
-tags: ["hardware", "microcontroller", " I²C", "Arduino"]
+tags: ["hardware", "microcontroller", "I2C", "Arduino"]
 categories: ["arduino"]
 ---
 ##  Goodbye delay(), Hello millis()

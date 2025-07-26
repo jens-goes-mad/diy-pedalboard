@@ -1,5 +1,5 @@
 ---
-title:  I²C and tasks"
+title: I²C and tasks"
 layout: article
 draft: false
 summary: "
@@ -7,7 +7,7 @@ Arduino and I²C + LCD displays using tasks
 "
 weight: 205
 image: "PB_I2C_LCD_task_mess.jpg"
-tags: ["hardware", "microcontroller", " I²C", "Arduino", "Tasks"]
+tags: ["hardware", "microcontroller", "I2C", "Arduino", "Tasks"]
 categories: ["arduino"]
 ---
 ##  Goodbye delay(), Hello Tasks!

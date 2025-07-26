@@ -81,6 +81,14 @@ blocking calls, and pretend working in parallel. For this we start a refactoring
     body: "
 Added the [me page](/me) and final notice stuff (sigh)
 "
+  - label: "2025-07-26"
+    title: "Simulation, Hands on (well, ChatGPT did it)"
+    body: "
+First time we are talking about [Simulation](/prototyping/simulation) and really simulated LCDs with JavaFX. 
+We learned things about [TrueType Fonts](/tools/visuals#truetype-fonts) and why Software development is more than an IDE.
+Never forget all the [tools](/tools) like [images, diagrams](/tools/visuals) to present a proper blog. But there is
+much more to experience like 2D / 3D modeling, PCB, a.s.o 
+"
 ---
 
 # DIY Pedal board timeline

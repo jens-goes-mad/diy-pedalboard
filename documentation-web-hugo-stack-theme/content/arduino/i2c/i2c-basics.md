@@ -8,7 +8,7 @@ context switching and even cooperative or preempting multitasking
 "
 weight: 200
 image: "PB_I2C_LCD.jpg"
-tags: ["hardware", "microcontroller", " I²C", "Arduino"]
+tags: ["hardware", "microcontroller", "I2C", "Arduino"]
 categories: ["arduino"]
 ---
 ##  I²C

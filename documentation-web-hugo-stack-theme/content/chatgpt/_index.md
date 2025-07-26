@@ -5,7 +5,7 @@ links:
     description: a blog about software and hardware development of a DIY pedal board
 menu:
     main: 
-        weight: 200
+        weight: 750
         params:
             icon: robot
 

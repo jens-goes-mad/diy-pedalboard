@@ -27,6 +27,6 @@ a reusable component.
 
 ## Component Diagram
 
-A component diagram (see [UML](design/uml)) breaks down the actual system under development into various high levels of functionality. 
+A component diagram (see [UML](https://circle.visual-paradigm.com/diagram-examples/)) breaks down the actual system under development into various high levels of functionality. 
 Each component is responsible for one clear aim within the entire system and only interacts with other essential 
 elements on a [need-to-know basis](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-component-diagram/).

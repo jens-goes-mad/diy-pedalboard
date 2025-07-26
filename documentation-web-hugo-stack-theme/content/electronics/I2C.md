@@ -83,12 +83,18 @@ https://www.electronicwings.com
 ](EW_LCD_Interfacing_Diagram-8bit.png)
 
 Instead of wrestling with a spaghetti of wires and enable logic, we can use I²C LCD driver chips.
+
+![I²C LCD controller](I2C_LCD.png)
+
 These drivers are soldered directly onto the LCD module and expose a simple 4-wire I²C interface.
 Multiple displays can be chained on the same bus, dramatically reducing both the number of wires
 and the number of microcontroller ports needed.
 
-![I²C LCD controller](I2C_LCD.png)
+![
+https://linuxhint.com/arduino-nano-i2c-lcd-display/
+](I2C_LCD_breadboard.jpg)
 
 It’s simpler, cleaner, and makes the whole system far more scalable — exactly what our pedal board needs.
 And if you want to see it in action, see [Arduino + I²C + LCD + Multitasking](/arduino/i2c/i2c-basics) 
+
 

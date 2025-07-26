@@ -10,7 +10,6 @@ layout: article
 draft: false
 weight: 100
 image: "D_FFF_chapter.jpeg"
-categoryWeight: "010.001"
 ---
 ## Form follows function
 

@@ -15,7 +15,7 @@ toc: true
 Welcome to my blog — a behind-the-scenes journey into the development of both hardware and software for a modern pedal
 board.
 
-## About me
+## About me (past)
 
 Hi, I’m Jens — a software developer with over 30 years of hands-on experience across industries like finance, 
 transportation, healthcare, high-performance trading, and ecommerce. 
@@ -85,6 +85,12 @@ management and payment system.
   have been our most… motivating QA decision ever. Needless to say, that release was tested more thoroughly than 
   any before it.
 
+![
+Disclaimer
+The following image from the Victoria’s Secret campaign is purely a testing engagement demonstration.
+Strong blur effect applied to avoid having to slap on an 18+ warning 
+](0908-VIC-A008-F01-3.jpg)
+
 We built platforms for:
 - fashion-and-you (Suisse)
 - brands4friends (Germany)
@@ -114,18 +120,36 @@ Till today. And now I love to work in fields like
 - Docker, Docker, Docker and RestAPIs in R, Python, Java, C++ (don't ask).
 - AI Tools e.g. AWS Textract, AWS NovaLite, ChatGPT API, ChatGPT Agents, Prompts
 - Six Financial, WM, FactSet, TTM0, AVS, Bloomberg
+- Prometheus, Victoria Metrics, PushGateway, Jmx-Batch-Push, Grafana 
+
+![good old times](JB_VCs.jpg)
 
 ----
 
-Over time, my development focus naturally evolved. Today, I work heavily with Docker, 
-advocate for microservice architectures to generate PDFs and various types of charts, and experiment with AI workflows — 
-from building pipelines for reproducible results to wrestling with ChatGPT agents that answer provider data queries 
+## About me (present)
+
+Over time, my development focus naturally evolved. Today, I work heavily with Docker,
+advocate for microservice architectures to generate PDFs and various types of charts, and experiment with AI workflows —
+from building pipelines for reproducible results to wrestling with ChatGPT agents that answer provider data queries
 in plain language. It’s a blend of engineering discipline and creative chaos, and I love both.
 
-Outside of my day job, I’m building a DIY MIDI Music Workstation Pedalboard — a modular, 
+Outside of my day job, I’m building a DIY MIDI Music Workstation Pedal board — a modular,
 touchscreen-powered music controller. It’s a return to embedded systems, electronics, and low-level programming
-mixed with Flutter, Docker, and modern software architecture. 
+mixed with Flutter, C++, Dart, WebSockets, RestAPIs, Docker, and modern component based software architecture.
 A passion project fueled by curiosity, solder smoke, and my AI pair programmer: ChatGPT.
+
+## Music!
+
+Even I am on stage you’ll never spot me. I’m that long-haired, old, slightly scruffy guy hiding in the back.
+The good news? My Kronos is exactly the right height to perfectly hide my belly. Total win. For all of us.
+
+![see man in the mirror, uhm, circle](JB_EE.jpg)
+
+## Or you spot me outside!
+
+![friends](JB_H.jpeg)
+
+----
 
 ## § 5 TMG
 

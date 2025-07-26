@@ -14,7 +14,6 @@
             {{ end }}
         {{ end }}
 
-    {{ if $pages }}
         <div class="sidebar-siblings">
         {{ $pagesWithoutParent := slice }}
         {{ if and $pages (gt (len $pages) 0) }}
@@ -69,8 +68,7 @@
             {{ end }}
 
             {{ $descendantsFiltered = partial "slice/difference" (dict "A" $descendantsFiltered "B" $siblings) }}
-
-            {{ if gt (len $siblings) 0 }}
+            {{ if and $current.Section (gt (len $siblings) 0) }}
             <h2>More in this section</h2>
                 {{ range $siblings }}
             <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
@@ -100,6 +98,5 @@
             {{ end }}
         {{ end }}
         </div>
-    {{ end }}
     </aside>
 {{ end }}

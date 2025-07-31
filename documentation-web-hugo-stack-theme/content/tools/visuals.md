@@ -34,7 +34,7 @@ It’s simple, intuitive, and free for solo developers. Just works.
 
 Wait... fonts? Why fonts?
 
-In [prototyping](/prototyping/simulation#idea) we simulate LCD screens in software (JavaFX) to test UI components and concepts without physical hardware.
+In [prototyping](/prototyping/simulation_lcd#idea) we simulate LCD screens in software (JavaFX) to test UI components and concepts without physical hardware.
 My first idea was to use a ready-made TrueType [LCD-style font](https://www.fontspace.com/search?q=LCD), 
 brilliant for prototyping, or so I thought... Until I remembered those [user defined characters](/prototyping/thinking_outside_the_box#modern-tools-repurposed) 
 on real LCDs. To simulate those missing custom characters, I used [glyphr studio](https://www.glyphrstudio.com/app/) 

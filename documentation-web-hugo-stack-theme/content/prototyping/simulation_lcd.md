@@ -1,5 +1,5 @@
 ---
-title: "Simulating Components"
+title: "Simulating Components (Part 1 - LCD)"
 summary: "
 Simulation"
 date: 2025-06-01
@@ -227,11 +227,16 @@ and you get:<br>
 
 ![most basic Simulator up and running](JavaFX-one-LCD.jpg)
 
+[In Part 2](/prototyping/simulation_i2c) we will talk to the LCD — in Software. I’ll show how to connect and communicate with the LCD component, 
+purely in software and how to treat hardware like reusable software modules.
+
+
 ## Downloads
 
 You can download [javafx-sdk-xx.y.z](https://gluonhq.com/products/javafx/) and 
 [SceneBuilder](https://gluonhq.com/products/scene-builder/) from Gluon
 and [JDK](https://bell-sw.com/pages/downloads/#jdk-21-lts) from Bellsoft.
+
 
 
 

@@ -10,11 +10,11 @@ unsigned long g_loopCounter = 0;
 
 class Task
 {
-  private:
+private:
     unsigned long _nextTime_ms;
     unsigned long _interval_ms;
   
-  public:
+public:
     Task(unsigned long interval_ms);
     virtual void update(unsigned long currentTime_ms);
     

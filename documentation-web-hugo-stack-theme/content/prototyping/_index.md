@@ -78,7 +78,7 @@ illustrate core concepts. Each of these samples plays a fundamental role in its 
 
 [C++ and Arduino? Overview](/arduino)<br>
 [C++ and Arduino? From delay(), Tasks, I²C and LCDs](/arduino/i2c)<br>
-[Java, JavaFX LCD Simulator?](/prototyping/simulation)<br>
+[Java, JavaFX LCD Simulator?](/prototyping/simulation_lcd)<br>
 
 And while they may start out as isolated experiments, rest assured:
 every one of them contributes to the final product in some way.

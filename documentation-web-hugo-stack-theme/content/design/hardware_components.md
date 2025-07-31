@@ -52,7 +52,10 @@ Handles traditional DIN MIDI connectors, manages the serial interface, and trans
 It’s the backbone for communication with external MIDI gear.
 
 #### LCDs?
-LCDs may help to read device messages even in bad lighting conditions. 
+LCDs may help to read device messages even in bad lighting conditions.
+
+Want to see [Hardware LCD in action](/arduino/i2c/i2c-task-mess)?<br>
+Or are you more interested in JavaFX [Software simulated LCDs](/prototyping/simulation_lcd)?
 
 #### USB Device Handling
 USB isn't a core topic here, but it still plays a support role.
@@ -120,6 +123,8 @@ you can test and prototype the UI without needing any physical hardware at all. 
 
 This approach is not only great for rapid development, but also perfect for debugging, running headless simulations,
 or designing the UI while waiting for the soldering iron to cool down.
+
+
 
 
 [Time to solder! Or better simulate first](/design/electronic_circuits#breadboard-and-simulation).

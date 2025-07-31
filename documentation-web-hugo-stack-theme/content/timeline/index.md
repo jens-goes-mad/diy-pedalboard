@@ -29,7 +29,7 @@ your own templates. You can see progress (or not) on github
   - label: "2025-07-26"
     title: "Simulation, Hands on (well, ChatGPT did it)"
     body: "
-First time we are talking about [Simulation](/prototyping/simulation) and really simulated LCDs with JavaFX. 
+First time we are talking about [Simulation](/prototyping/simulation_lcd) and really simulated LCDs with JavaFX. 
 We learned things about [TrueType Fonts](/tools/visuals#truetype-fonts) and why Software development is more than an IDE.
 Never forget all the [tools](/tools) like [images, diagrams](/tools/visuals) to present a proper blog. But there is
 much more to experience like 2D / 3D modeling, PCB, a.s.o 

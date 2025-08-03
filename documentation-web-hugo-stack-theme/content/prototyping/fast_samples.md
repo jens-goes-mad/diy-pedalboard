@@ -7,7 +7,7 @@ It’s about momentum first, structure second — because iteration is the proce
 date: 2025-06-01
 layout: article
 draft: false
-weight: 110
+weight: 102
 categoryWeight: "020.010"
 ---
 ## Prototyping?

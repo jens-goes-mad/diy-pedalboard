@@ -26,18 +26,15 @@ don't be scared, you can use HUGO without account), the HUGO Stack theme (https:
 — and that’s what you’re reading right now. Naturally, when you get familiar with such a system you start to develop
 your own templates. You can see progress (or not) on github
 (https://github.com/jens-goes-mad/diy-pedalboard/tree/master/documentation-web-hugo-stack-theme)"
-  - label: "2025-07-26"
-    title: "Simulation, Hands on (well, ChatGPT did it)"
+  - label: "2025-08-02"
+    title: "simulation / HUGO"
     body: "
-First time we are talking about [Simulation](/prototyping/simulation_lcd) and really simulated LCDs with JavaFX. 
-We learned things about [TrueType Fonts](/tools/visuals#truetype-fonts) and why Software development is more than an IDE.
-Never forget all the [tools](/tools) like [images, diagrams](/tools/visuals) to present a proper blog. But there is
-much more to experience like 2D / 3D modeling, PCB, a.s.o 
-"
-  - label: "2025-07-20"
-    title: "me and legal"
-    body: "
-Added the [me page](/me) and final notice stuff (sigh)
+While adding more and more content, the HUGO sidebar gets hard to use. With a little help of ChatGPT we introduced 
+an accordion...partial / component / JavaScript-wizardry.
+We did a deep dive into OO, created a [serial protocol](/prototyping/hardware_lcd) to communicate with our LCD and 
+[JavaFX Simulator](/prototyping/simulation_lcd) without any code changes on the user side. Even UML is not forgotten. 
+And last but not least ChatGPT created a fully running [terminal app](/prototyping/hardware_lcd#serial-is-for-sissies), 
+so we can get rid of screen.
 "
   - label: "2025-07-18"
     title: "Arduino / I²C / LCD"

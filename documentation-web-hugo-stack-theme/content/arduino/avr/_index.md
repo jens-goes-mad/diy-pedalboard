@@ -6,13 +6,12 @@ links:
 menu:
     main:
         parent: "arduino"
+        this: "avr"
         weight: 60
-        params:
-            icon: cpu
 summary: "
 An AVR processor is a type of microcontroller—a tiny computer on a single chip—commonly used in electronics, 
 embedded systems, and hobbyist projects like those involving Arduino boards.
-"            
+"
 toc: true
 tags: ["hardware", "arduino", "AVR"]
 categories: ["arduino"]

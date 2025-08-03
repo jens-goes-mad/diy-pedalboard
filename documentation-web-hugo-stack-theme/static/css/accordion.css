@@ -1,0 +1,33 @@
+.accordion {
+  margin-bottom: 20px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.5rem 0;
+  color: orange;
+}
+
+.accordion-toggle .chevron::before {
+  content: "▸"; /* right-facing arrow */
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.accordion-toggle.active .chevron::before,
+.accordion-content.open ~ .accordion-toggle .chevron::before {
+  content: "▸"; /* right-facing arrow */
+  transform: rotate(90deg); /* downward arrow */
+}

@@ -1,0 +1,14 @@
+<p>
+{{ with .Params.links }}
+    {{ range . }}
+        {{ $link := . }}
+        {{ if $link.title }}
+            {{ $link.title }}
+        {{ else }}
+            {{ $link.description | default "No description" }}
+        {{ end }}
+    {{ end }}
+{{ else }}
+    {{ .Summary }}
+{{ end }}
+</p>

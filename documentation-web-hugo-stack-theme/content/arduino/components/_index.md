@@ -5,10 +5,9 @@ links:
     description: a blog about software and hardware development of a DIY pedal board
 menu:
     main:
-        identifier: "arduino"
+        parent: "arduino"
         weight: 80
-        params:
-            icon: cpu
+summary: "TEST TEST"
 toc: true
 tags: ["hardware", "arduino", "i2c", "components"]
 categories: ["arduino", "components"]

@@ -5,11 +5,9 @@ I share a few out-of-the-box solutions, like using LCD displays in unconventiona
 not characters — a mindset borrowed straight from early game dev. Along the way, we’ll take a detour into the 
 retro past — revisiting the principles behind 2D scrolling arcade games, and how they still apply to embedded projects today.
 "
-date: 2025-06-01
 layout: article
 draft: false
 weight: 130
-categoryWeight: "020.030"
 ---
 # Prototyping outside the box?
 

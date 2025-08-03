@@ -1,12 +1,13 @@
 ---
 title: "Simulating Components (Part 1 - LCD)"
 summary: "
-Simulation"
-date: 2025-06-01
+Simulation is about mimicking the behavior of a system or component in a simplified, abstract way. 
+It doesn’t try to perfectly replicate the underlying internals — instead, it models just enough to let you observe, 
+analyze, or test how something would behave under certain conditions."
 layout: article
 XType: design
 draft: false
-weight: 101
+weight: 200
 ---
 ## Simulation vs. Emulation – What's the Difference?
 Although the terms simulation and emulation are sometimes used interchangeably, 

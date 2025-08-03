@@ -5,12 +5,10 @@ A quick look at how to fly high and take a bird’s-eye view — spotting the sy
 and dedicated components early on. It’s about seeing structure before code, and using that vision to guide
 cleaner, modular design.
 "
-date: 2025-06-01
 layout: article
 XType: design
 draft: false
 weight: 100
-categoryWeight: "020.020"
 ---
 ## Thinking Naively (and Breaking the Rules on Purpose)<br>
 Let’s ignore all best practices and architectural principles for a moment, and look at the software from a completely

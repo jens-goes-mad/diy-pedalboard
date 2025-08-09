@@ -1,0 +1,71 @@
+https://editor.plantuml.com/um
+
+
+
+@startuml
+skinparam componentStyle rectangle
+left to right direction
+
+package "LCD Display System (Micro Controller)" {
+    [Micro Controller (com)] <<interface>>
+    [I2C LCD Controller]
+    [Micro Controller (com)] --> [I2C LCD Controller] : message
+    [I2C Display]
+    [I2C LCD Controller] --> [I2C Display] : controls
+}
+
+[External Client] --> [Micro Controller (com)] : command
+@enduml
+
+
+
+@startuml
+skinparam componentStyle rectangle
+left to right direction
+
+package "LCD Display System (Java)" {
+    [Java Adapter] <<interface>>
+    [JavaFX LCD Simulater]
+    [Java Adapter] --> [JavaFX LCD Simulater] : simulates
+}
+
+[External Client] --> [Java Adapter] : command
+@enduml
+
+
+
+@startuml
+skinparam componentStyle rectangle
+left to right direction
+
+package "LCD Display System (Java)" {
+    [Java Adapter] <<interface>>
+    [JavaFX LCD Simulater]
+    [Java Adapter] --> [JavaFX LCD Simulater] : simulates
+}
+
+[External Client] --> [Java Adapter] : command
+
+package "LCD Display System (Micro Controller)" {
+    [Micro Controller (com)] <<interface>>
+    [I2C LCD Controller]
+    [Micro Controller (com)] --> [I2C LCD Controller] : message
+    [I2C Display]
+    [I2C LCD Controller] --> [I2C Display] : controls
+}
+
+[External Client] --> [Micro Controller (com)] : command
+
+@enduml
+
+
+
+@startuml
+skinparam componentStyle rectangle
+left to right direction
+
+package "LCD Display System" {
+}
+
+[External Client] --> [LCD Display System] : command
+@enduml

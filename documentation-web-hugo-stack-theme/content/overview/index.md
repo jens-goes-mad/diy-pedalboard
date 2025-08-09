@@ -46,7 +46,7 @@ Yes, it’s a mouthful — but it’s also going to be a powerhouse.
 
 Who am I?
 
-Hi, I’m Jens — a passionate software developer for over 30 years and a hobby musician when no one’s looking. 
+Hi, I’m [Jens](/me#music) — a passionate software developer for over 30 years and a hobby musician when no one’s looking. 
 This blog will be my space to document the build, share the journey, and dive into the many technical, musical, 
 and design decisions along the way.
 Expect breakdowns of the architecture, discussions about what works (and what absolutely doesn’t), 
@@ -72,7 +72,7 @@ duck with a PhD and infinite patience.
 ### How I Start Any New Software Project
 
 Whenever I enter a new field — or start a new software project — I always try to zoom out first.
-I want a bird’s-eye view of the landscape:
+I want a [bird’s-eye view](/prototyping/birds_view) of the landscape:
 What am I trying to build? What’s the end goal? How do the parts fit together? Who’s likely to rage against the MIDI
 machine? Once I’ve got that overview, I start identifying building blocks — modules or parts that serve a clear, 
 dedicated purpose. Then I break them down even further.
@@ -171,13 +171,13 @@ For the curious, directly navigate to:
 
 {{< colorblock dark="#323232" light="#e0e0e0" >}}
 ### Under the Hood: Software / Hardware Design and Tools
-In this section, we’ll dig into the tools, languages, and design decisions behind the scenes — both digital 
+In this section, we’ll dig into the [tools](/tools), languages, and design decisions behind the scenes — both digital 
 and physical. I’ll walk through the programming languages and frameworks I’m using, and more importantly, 
 why I chose them (spoiler: it’s not always logical — sometimes it’s just what compiles before midnight).
 - We’ll get into the hardware-near stuff: low-level languages, how they interface with higher-level platforms like
-  the JVM, and how to bridge the two worlds when your microcontroller and your main app don’t speak the same dialect.
+  the JVM, and how to [bridge the two worlds](/prototyping/hardware_lcd) when your microcontroller and your main app don’t speak the same dialect.
 - On the physical side, I’ll show the tools used to design and build the hardware:
-  2D and 3D modeling tools, PCB design software (if it comes to that), and laser cutting workflows.
+  2D and [3D](/tools/3d/) modeling tools, PCB design software (if it comes to that), and laser cutting workflows.
 - The housing and metal case fabrication will get their moment too — including lessons learned while wrangling
   aluminum into submission.
 - Expect lots of photos and diagrams from the build process: CAD designs, wiring spaghetti, soldering drama,
@@ -186,7 +186,7 @@ why I chose them (spoiler: it’s not always logical — sometimes it’s just w
   attention.
 
 For the curious, directly navigate to:
-- [electronics and I²C](/electronics/i2c)
+- [electronics](/electronics)
 {{< /colorblock >}}
 
 ---

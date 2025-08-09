@@ -145,7 +145,7 @@ The good news? My Kronos is exactly the right height to perfectly hide my belly.
 
 ![see man in the mirror, uhm, circle](JB_EE.jpg)
 
-## Or you spot me outside!
+## Or you spot us outside!
 
 ![friends](JB_H.jpeg)
 

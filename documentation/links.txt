@@ -22,3 +22,12 @@ https://worldvectorlogo.com/de
 
 
 https://doodlenerd.com/css-element/speech-bubble-generator
+
+
+
+https://github.com/gigperformer/gp-sdk
+https://mil.ufl.edu/4744/docs/lcdmanual/characterset.html
+https://stack.jimmycai.com/writing/shortcodes
+https://pusher.com/tutorials/flutter-listviews/#custom-list-item
+https://grabcad.com/library/lcd-20x4-i2c-1
+https://raymii.org/s/articles/3D_modelling_a_real_world_object_in_OpenSCAD.html#:~:text=OpenSCAD%20has%20no%20notice%20of,decide%20what%20those%20units%20mean.

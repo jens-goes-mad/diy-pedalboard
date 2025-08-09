@@ -84,7 +84,7 @@ https://circuitdigest.com/electronic-circuits/push-button-led-circuit
 
 ### Circuit Simulation
 
-Thanks to tools like Falstad's Circuit Simulator (https://www.falstad.com/circuit/circuitjs.html),
+Thanks to tools like [Falstad's Circuit Simulator](https://www.falstad.com/circuit/circuitjs.html),
 we can build, tweak, and debug electronic circuits virtually — no breadboard, no burnt fingers, no accidental shorts.
 What once took a full afternoon and a drawer of parts now takes minutes, a mouse, and a bit of imagination.
 

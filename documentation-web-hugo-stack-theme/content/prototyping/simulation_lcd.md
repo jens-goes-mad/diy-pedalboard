@@ -228,7 +228,7 @@ and you get:<br>
 
 ![most basic Simulator up and running](JavaFX-one-LCD.jpg)
 
-[In Part 2](/prototyping/simulation_i2c) we will talk to the LCD — in Software. I’ll show how to connect and communicate with the LCD component, 
+[In Part 2](/prototyping/simulation_arduino) we will talk to the LCD — in Software. I’ll show how to connect and communicate with the LCD component, 
 purely in software and how to treat hardware like reusable software modules.
 
 

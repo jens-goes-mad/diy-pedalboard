@@ -17,10 +17,10 @@ public class MainFourInOneRow
     public void start(final Stage primaryStage)
     {
         final JavaFXLCDDisplay[] displays = new JavaFXLCDDisplay[] {
-            new JavaFXLCDDisplay(FONT_HEIGHT),
-            new JavaFXLCDDisplay(FONT_HEIGHT),
-            new JavaFXLCDDisplay(FONT_HEIGHT),
-            new JavaFXLCDDisplay(FONT_HEIGHT)
+            new JavaFXLCDDisplay(4, 20, FONT_HEIGHT),
+            new JavaFXLCDDisplay(4, 20, FONT_HEIGHT),
+            new JavaFXLCDDisplay(4, 20, FONT_HEIGHT),
+            new JavaFXLCDDisplay(4, 20, FONT_HEIGHT)
         };
 
         final JavaFXLCDDisplay display0 = displays[0];

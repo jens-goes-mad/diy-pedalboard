@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 public class MainFourInOneRowPlusSerial
     extends Application
 {
+    private static final int ROWS = 4;
+    private static final int COLS = 20;
     private static final int PADDING = 10;
     private static final int FONT_HEIGHT = 18;
 
@@ -17,14 +19,14 @@ public class MainFourInOneRowPlusSerial
     public void start(final Stage primaryStage)
     {
         final JavaFXLCDDisplay[] displays = new JavaFXLCDDisplay[] {
-            new JavaFXLCDDisplay(FONT_HEIGHT),
-            new JavaFXLCDDisplay(FONT_HEIGHT),
-            new JavaFXLCDDisplay(FONT_HEIGHT),
-            new JavaFXLCDDisplay(FONT_HEIGHT)
+            new JavaFXLCDDisplay(ROWS, COLS, FONT_HEIGHT),
+            new JavaFXLCDDisplay(ROWS, COLS, FONT_HEIGHT),
+            new JavaFXLCDDisplay(ROWS, COLS, FONT_HEIGHT),
+            new JavaFXLCDDisplay(ROWS, COLS, FONT_HEIGHT)
         };
 
         final JavaFXLCDDisplay display0 = displays[0];
-        final double w = display0.getScreenWidth() * 4 + 5 * PADDING;
+        final double w = display0.getScreenWidth() * ROWS + 5 * PADDING;
         final double h = display0.getScreenHeight() + 2 * PADDING;
 
         final HBox hbox = new HBox(PADDING);

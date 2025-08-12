@@ -1,5 +1,5 @@
 .accordion {
-  margin-bottom: 20px;
+  margin: 0 10px 0 10px;
 }
 
 .accordion-content {
@@ -18,7 +18,7 @@
   display: flex;
   font-weight: bold;
   gap: 0.5rem;
-  padding: 0.5rem 0;
+  padding-left: 0;
 }
 
 /* Dark mode */

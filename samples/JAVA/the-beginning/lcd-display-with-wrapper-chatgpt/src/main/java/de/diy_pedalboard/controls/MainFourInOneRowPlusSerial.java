@@ -1,10 +1,13 @@
 package de.diy_pedalboard.controls;
 
+import de.diy_pedalboard.controls.adapter.SerialCommandAdapter;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+
+import java.util.List;
 
 public class MainFourInOneRowPlusSerial
     extends Application
@@ -41,6 +44,17 @@ public class MainFourInOneRowPlusSerial
             display.setCursor(0, 0);
             display.print("Display: " + i);
         }
+
+        final List<String> args = getParameters().getRaw();
+        final LcdCommandService lcdCommandService = new LcdCommandService(displays);
+        final SerialCommandAdapter.ICommandHandler commandHandler = command -> {
+            lcdCommandService.process(command);
+            return null;
+        };
+        final SerialCommandAdapter serialCommandAdapter = new SerialCommandAdapter(args.get(0), commandHandler);
+        Runtime.getRuntime().addShutdownHook(new Thread(serialCommandAdapter::shutdown));
+        serialCommandAdapter.start();
+
 
         final Scene scene = new Scene(hbox, w, h);
 

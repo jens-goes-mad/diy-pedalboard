@@ -85,19 +85,10 @@ public class JavaFXLCDDisplay
 
         _timeline = new Timeline(
             new KeyFrame(Duration.millis(500), e -> {
-                // do something every 500 ms on the FX thread
-                if (_isBlinking.get()) {
-                    if (_isBlinkingOn.get()) {
-                        final StringBuilder row = new StringBuilder(_rowData[_cursorRow].toString());
-                        row.setCharAt(_cursorCol, (char) 245);
-                        _textRows[_cursorRow].setText(row.toString());
-                    } else {
-                        _textRows[_cursorRow].setText(_rowData[_cursorRow].toString());
-                    }
+                updateBlink();
 
-                    final boolean prev = _isBlinkingOn.get();
-                    _isBlinkingOn.compareAndExchange(prev, !prev);
-                }
+                final boolean prev = _isBlinkingOn.get();
+                _isBlinkingOn.compareAndExchange(prev, !prev);
             })
         );
         _timeline.setCycleCount(Animation.INDEFINITE);
@@ -113,6 +104,7 @@ public class JavaFXLCDDisplay
         }
         _cursorRow = 0;
         _cursorCol = 0;
+        updateBlink();
     }
 
     @Override
@@ -121,12 +113,14 @@ public class JavaFXLCDDisplay
         if (row >= 0 && row < _rowCount && col >= 0 && col < _colCount) {
             _cursorRow = row;
             _cursorCol = col;
+            updateBlink();
         }
     }
 
     public void setBlink(final boolean blink)
     {
         _isBlinking.set(blink);
+        updateBlink();
     }
 
     @Override
@@ -156,5 +150,23 @@ public class JavaFXLCDDisplay
 
         _cursorRow = r;
         _cursorCol = c;
+
+        updateBlink();
+    }
+
+
+    protected void updateBlink()
+    {
+        // do something every 500 ms on the FX thread
+        if (_isBlinking.get()) {
+            if (_isBlinkingOn.get()) {
+                final StringBuilder row = new StringBuilder(_rowData[_cursorRow].toString());
+                row.setCharAt(_cursorCol, (char) 245);
+                _textRows[_cursorRow].setText(row.toString());
+                return;
+            }
+        }
+
+        _textRows[_cursorRow].setText(_rowData[_cursorRow].toString());
     }
 }

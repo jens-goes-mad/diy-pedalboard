@@ -26,17 +26,19 @@ don't be scared, you can use HUGO without account), the HUGO Stack theme (https:
 — and that’s what you’re reading right now. Naturally, when you get familiar with such a system you start to develop
 your own templates. You can see progress (or not) on github
 (https://github.com/jens-goes-mad/diy-pedalboard/tree/master/documentation-web-hugo-stack-theme)"
-  - label: "2025-08-09"
-    title: "simulation / HUGO"
+  - label: "2025-08-12"
+    title: "simulation / HUGO / Visuals"
     body: "
 While adding more and more content, the HUGO sidebar gets hard to use. With a little help of ChatGPT we introduced 
 an accordion...partial / component / JavaScript-wizardry.
-We did a deep dive into OO, created a [serial protocol](/prototyping/hardware_lcd) to communicate with our LCD and 
-[JavaFX Simulator](/prototyping/simulation_lcd) without any code changes on the user side. Even UML is not forgotten. 
+We scratched OO, created a [serial protocol](/prototyping/hardware_lcd) to communicate with our LCD, and 
+[JavaFX Simulator](/prototyping/simulation_lcd) without any code changes on the user side. 
+Furthermore cursor blinking was added to JavaFX LCD class, including scratching [RS232](/prototyping/simulation_arduino#the-macosx-part) 
+from 1960. And even UML is not forgotten. 
 And last but not least ChatGPT created a fully running [terminal app](/prototyping/hardware_lcd#serial-is-for-sissies), 
 so we can get rid of screen. I added lots of references to the overview page as quick-start navigation. Furthermore 
 tools entered the scene to discuss [visuals](/tools/visuals/) like GIMP and other applications, and a first look at 
-[3D modeling](/tools/3d) with OpenSCAD.    
+[3D modeling](/tools/3d) with OpenSCAD.     
 "
   - label: "2025-07-18"
     title: "Arduino / I²C / LCD"

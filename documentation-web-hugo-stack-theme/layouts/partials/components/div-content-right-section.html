@@ -1,14 +1,18 @@
 <p>
-{{ with .Params.links }}
-    {{ range . }}
-        {{ $link := . }}
-        {{ if $link.title }}
-            {{ $link.title }}
-        {{ else }}
-            {{ $link.description | default "No description" }}
-        {{ end }}
-    {{ end }}
+{{ if .Params.ShortSummary }}
+    {{ .Params.ShortSummary }}
 {{ else }}
-    {{ .Summary }}
+    {{ with .Params.links }}
+        {{ range . }}
+            {{ $link := . }}
+            {{ if $link.title }}
+                {{ $link.title }}
+            {{ else }}
+                {{ $link.description | default "No description" }}
+            {{ end }}
+        {{ end }}
+    {{ else }}
+        {{ .Summary }}
+    {{ end }}
 {{ end }}
 </p>

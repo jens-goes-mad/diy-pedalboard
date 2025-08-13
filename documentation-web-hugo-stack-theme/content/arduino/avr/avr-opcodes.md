@@ -1,8 +1,11 @@
 ---
-title: ATmega328P OpCodes
 layout: article
 draft: false
-summary: "Overview about AVR instructions and Opcodes"
+title: ATmega328P OpCodes
+summary: "
+Here’s a (hopefully) complete, detailed list of the instructions supported by the ATmega328P AVR core, 
+including mnemonics, opcode formats, and typical cycle counts
+"
 weight: 500
 categoryWeight: "300.100"
 image: "PB_LDI_SUB_CALL_2.jpg"

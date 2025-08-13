@@ -1,9 +1,11 @@
 ---
-title: ATmega328P Instructions
-# date: 2025-06-03
 layout: article
 draft: false
-summary: "All about instructions and Opcodes, Cycles!"
+title: "ATmega328P Instructions"
+summary: "
+All about instructions and Opcodes. We disassemble binaries, decode instructions and count cycles.
+And we introduce some kind of Morse-Code to avoid serial at all
+"
 weight: 160
 categoryWeight: "300.200"
 image: "PB_LDI_SUB_CALL.jpg"
@@ -167,8 +169,6 @@ Instead of classic Morse sequences of short and long signals, I use a dummy form
 This simple trick lets us "print" numbers using just the onboard LED — no additional hardware, no clutter, 
 no hidden surprises.
 
-
-
     while (total_ms > 0) {
         digitalWrite(LED_BUILTIN, HIGH);
         delay(2000);
@@ -190,7 +190,7 @@ no hidden surprises.
 
 DRUMROLL!
 
-{{< video src="OnePing.mp4" type="video/mp4" autoplay="false" loop="false" >}}
+{{< youtube "zPgn324n_Lo" >}}
 
 In theory we expected 3750 [ms], we measured 3771 [ms], that's only 21 [ms] difference!
 A 21 [ms] delta over 3.75 seconds is just 0.55%, which is within expected bounds due to hardware and measurement imperfections.

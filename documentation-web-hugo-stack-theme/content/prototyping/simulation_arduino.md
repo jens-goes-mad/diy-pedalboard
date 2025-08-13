@@ -177,6 +177,10 @@ Therefore we need socat...
     /tmp/vserial0B ->  /dev/ttys017
     socat PID: 27722 (stored in /tmp/vserial0.pid)
 
+### And, finally test it!
+
 After successfully setting up `socat` two virtual serial endpoints `/tmp/vserial0A` and `/tmp/vserial0B` are created.
 We can then connect our sender `SerialTerminalApp` via `/tmp/vserial0A` to our receiver `SerialCommandAdapter` via `/tmp/vserial0B`
-That's it!
+That's it!  
+
+{{< youtube "zCu93YDIZRw" >}}

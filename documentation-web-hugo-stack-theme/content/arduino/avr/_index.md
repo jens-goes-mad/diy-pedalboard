@@ -1,14 +1,14 @@
 ---
 title: AVR
 links:
-  - title: AVR - not Pinky, but the Brain of an Arduino
+  - title: "ATmega328P"
     description: a blog about software and hardware development of a DIY pedal board
 menu:
     main:
         parent: "arduino"
         this: "avr"
         weight: 60
-summary: "
+shortSummary: "
 An AVR processor is a type of microcontroller—a tiny computer on a single chip—commonly used in electronics, 
 embedded systems, and hobbyist projects like those involving Arduino boards.
 "

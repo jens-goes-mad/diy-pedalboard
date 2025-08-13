@@ -1,9 +1,11 @@
 ---
 title: Arduino Processor Basics
-# date: 2025-06-03
 layout: article
 draft: false
-summary: "Overview about instructions and Opcodes"
+summary: "
+Overview about instructions, Timing concepts, Clock and Opcodes.
+It's the starting point before we turn theory into practice
+"
 weight: 150
 categoryWeight: "300.100"
 image: "PB_Processors.jpg"

@@ -145,7 +145,11 @@ The good news? My Kronos is exactly the right height to perfectly hide my belly.
 
 ![see man in the mirror, uhm, circle](JB_EE.jpg)
 
-Under rare occasions I can be found on images (for sure, have to pay for it)
+Sometime you can see parts of me (arm behind a tree, or an eye, some hair)
+
+![Eye of the tiger](WHOB_JB.jpg)
+
+Under rare occasions I can be spotted on images in my entire gorgeousness (for sure, I have to pay for this)
 
 ![100 bucks](IMG_1037.jpeg)
 

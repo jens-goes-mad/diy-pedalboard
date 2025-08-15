@@ -2,3 +2,4 @@ simulation_arduino.md --> link to OOA/OOD/OOP IOC
 simulation_arduino.md --> link to GITHUB
 
 move /prototyping/hardware_lcd/ to /arduino/components/ do not forget to update links and linkedin
+

@@ -30,6 +30,8 @@ In today’s world, we all use technically brilliant touch devices from the age 
 But in that convenience, we often lose touch with the fundamentals — forgetting how these devices actually work under the hood.
 At their core, nothing has fundamentally changed: only the size, speed, and power consumption have evolved.
 
+![Arduino Nano Pinout](Arduino_Nano_PinOut.png)
+
 I chose the Arduino Nano for this section because it’s far easier to set up and experiment with compared to using
 Visual Studio Code and the ESP-IDF toolchain for the final device.
 

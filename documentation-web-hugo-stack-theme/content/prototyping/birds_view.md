@@ -6,7 +6,6 @@ and dedicated components early on. It’s about seeing structure before code, an
 cleaner, modular design.
 "
 layout: article
-XType: design
 draft: false
 weight: 100
 ---

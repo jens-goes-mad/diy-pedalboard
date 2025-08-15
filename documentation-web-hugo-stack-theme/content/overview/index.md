@@ -175,7 +175,7 @@ In this section, we’ll dig into the [tools](/tools), languages, and design dec
 and physical. I’ll walk through the programming languages and frameworks I’m using, and more importantly, 
 why I chose them (spoiler: it’s not always logical — sometimes it’s just what compiles before midnight).
 - We’ll get into the hardware-near stuff: low-level languages, how they interface with higher-level platforms like
-  the JVM, and how to [bridge the two worlds](/prototyping/hardware_lcd) when your microcontroller and your main app don’t speak the same dialect.
+  the JVM, and how to [bridge the two worlds](/arduino/hardware_lcd) when your microcontroller and your main app don’t speak the same dialect.
 - On the physical side, I’ll show the tools used to design and build the hardware:
   2D and [3D](/tools/3d/) modeling tools, PCB design software (if it comes to that), and laser cutting workflows.
 - The housing and metal case fabrication will get their moment too — including lessons learned while wrangling

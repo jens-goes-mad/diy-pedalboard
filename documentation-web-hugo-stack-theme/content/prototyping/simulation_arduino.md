@@ -12,7 +12,7 @@ weight: 220
 ## Simulation vs. Emulation
 
 [In Part 1](/prototyping/simulation_lcd), we learned how to simulate an LCD display entirely in Java
-using a custom TrueType font rendered in JavaFX. The [hardware section](/prototyping/hardware_lcd) demonstrated, 
+using a custom TrueType font rendered in JavaFX. The [hardware section](/arduino/hardware_lcd) demonstrated, 
 how to use a Java based terminal application to interact with the hardware LCD. Next we will tweak our JavaFX 
 application to use the same serial interface implementation, which allows swapping them without disrupting or 
 changing any other software component of our DIY-pedal board.
@@ -25,8 +25,8 @@ Thus from a callers perspective it does not play a role if the CMD changes text 
 
 ### The Java Software part
 
-Now that our Arduino can talk to an [LCD over I²C](/prototyping/hardware_lcd), it’s time to bring that same 
-[communication](/prototyping/hardware_lcd#protocol) into our Java simulation environment.
+Now that our Arduino can talk to an [LCD over I²C](/arduino/hardware_lcd), it’s time to bring that same 
+[communication](/arduino/hardware_lcd#protocol) into our Java simulation environment.
 Why? Because sometimes you want to keep building your software without waiting for the soldering iron to heat up.
 We don’t reinvent the wheel here. The excellent [jSerialCom](https://fazecast.github.io/jSerialComm/) 
 library takes care of all the low-level serial handling. You can grab it directly from 

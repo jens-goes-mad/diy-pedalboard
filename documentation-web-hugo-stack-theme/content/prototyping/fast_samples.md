@@ -8,7 +8,6 @@ date: 2025-06-01
 layout: article
 draft: false
 weight: 102
-categoryWeight: "020.010"
 ---
 ## Prototyping?
 *Of course, paper doesn’t run code — but it’s a good start.*

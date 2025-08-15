@@ -14,6 +14,37 @@
 USBMIDI MIDI;                                     // core USB-MIDI device
 Adafruit_NeoPixel pixel(NUM_PIXELS, RGB_LED_PIN, NEO_GRB + NEO_KHZ800);
 
+// ---- tiny helper: HSV (0..360,0..1,0..1) → RGB(0..255) ----
+static void hsv2rgb(uint16_t h, float s, float v, uint8_t &r, uint8_t &g, uint8_t &b) 
+{
+  h = (h % 360);
+  float C = v * s;
+  float X = C * (1 - fabsf(fmodf(h / 60.0f, 2) - 1));
+  float m = v - C;
+  float r1=0,g1=0,b1=0;
+  if      (h < 60)  { r1=C; g1=X; b1=0; }
+  else if (h < 120) { r1=X; g1=C; b1=0; }
+  else if (h < 180) { r1=0; g1=C; b1=X; }
+  else if (h < 240) { r1=0; g1=X; b1=C; }
+  else if (h < 300) { r1=X; g1=0; b1=C; }
+  else              { r1=C; g1=0; b1=X; }
+  r = (uint8_t)roundf((r1 + m) * 255.0f);
+  g = (uint8_t)roundf((g1 + m) * 255.0f);
+  b = (uint8_t)roundf((b1 + m) * 255.0f);
+}
+
+static inline void setHue(uint16_t hue_deg, uint8_t brightness = 64) 
+{
+  uint8_t r,g,b;
+  hsv2rgb(hue_deg, 1.0f, 1.0f, r, g, b);
+  pixel.setBrightness(brightness);
+  pixel.setPixelColor(0, pixel.Color(r, g, b));
+  pixel.show();
+}
+
+
+
+
 void setup() 
 {
   // Set descriptors BEFORE begin()
@@ -60,34 +91,4 @@ void loop()
     }
   }
   delay(1);
-}
-
-
-
-// ---- tiny helper: HSV (0..360,0..1,0..1) → RGB(0..255) ----
-static void hsv2rgb(uint16_t h, float s, float v, uint8_t &r, uint8_t &g, uint8_t &b) 
-{
-  h = (h % 360);
-  float C = v * s;
-  float X = C * (1 - fabsf(fmodf(h / 60.0f, 2) - 1));
-  float m = v - C;
-  float r1=0,g1=0,b1=0;
-  if      (h < 60)  { r1=C; g1=X; b1=0; }
-  else if (h < 120) { r1=X; g1=C; b1=0; }
-  else if (h < 180) { r1=0; g1=C; b1=X; }
-  else if (h < 240) { r1=0; g1=X; b1=C; }
-  else if (h < 300) { r1=X; g1=0; b1=C; }
-  else              { r1=C; g1=0; b1=X; }
-  r = (uint8_t)roundf((r1 + m) * 255.0f);
-  g = (uint8_t)roundf((g1 + m) * 255.0f);
-  b = (uint8_t)roundf((b1 + m) * 255.0f);
-}
-
-static inline void setHue(uint16_t hue_deg, uint8_t brightness = 64) 
-{
-  uint8_t r,g,b;
-  hsv2rgb(hue_deg, 1.0f, 1.0f, r, g, b);
-  pixel.setBrightness(brightness);
-  pixel.setPixelColor(0, pixel.Color(r, g, b));
-  pixel.show();
 }

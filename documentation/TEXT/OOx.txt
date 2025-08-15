@@ -1,0 +1,12 @@
+Here’s a short explanation of each:
+
+1. OOA (Object-Oriented Analysis)
+A process for understanding and modeling a problem domain by identifying the objects (things) in the system and their relationships. It focuses on what the system should do, not how it will do it. The goal is to create a clear conceptual model of the real-world problem.
+
+2. OOD (Object-Oriented Design)
+The step after analysis, where you take the conceptual model from OOA and decide how to implement it in software. This includes defining classes, interfaces, methods, and the interactions between them while considering technical constraints.
+
+3. OOP (Object-Oriented Programming)
+The actual coding phase where you implement the design using an object-oriented language (e.g., Java, C++, Python). It uses principles like encapsulation, inheritance, and polymorphism to build maintainable, reusable, and modular code.
+
+If you like, I can also give you a quick diagram showing how OOA → OOD → OOP flow together in a development process.

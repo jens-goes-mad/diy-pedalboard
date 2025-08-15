@@ -1,0 +1,91 @@
+ESP32 Dev Setup Diagram
+---------------------------
+[ macOS Host ]
+  |
+  |--> VS Code (native)
+         |
+         |--> Remote - Containers extension
+                   |
+                   |--> Docker container
+                          - Ubuntu 22.04
+                          - ESP-IDF
+                          - Toolchain
+                          - Python, CMake, Ninja
+
+Build inside container -> Copy .bin to host -> Flash via esptool.py on macOS
+
+----
+
+download Visual-Studio-Code
+https://code.visualstudio.com/docs/?dv=osx
+
+start
+abort python setup
+
+----
+
+samples/esp32/
+├── DOCKER/
+│   └── Dockerfile
+├── project-1/
+│   ├── .devcontainer/
+│   │   └── devcontainer.json
+│   ├── CMakeLists.txt
+│   └── main/
+│       ├── CMakeLists.txt
+│       └── blink.c
+└── project-2/
+    ├── .devcontainer/
+    │   └── devcontainer.json
+    ├── CMakeLists.txt
+    └── main/
+        ├── CMakeLists.txt
+        └── blink.c
+
+----
+
+open folder: samples/build/esp32/project-1
+Notifications --> install dev-containers
+reopen in dev-containers
+
+be patient creates a docker container, takes a while (have a look at the logs to make sure system is still alive)
+
+Notifications --> Use Docker container
+Terminal --> Open new terminal -->
+    root@289fc49f73aa:/workspaces/diy-pedalboard/samples/build/esp32/DOCKER#
+
+    # which python3
+        /root/.espressif/python_env/idf6.0_py3.10_env/bin/python3
+    # idf.py --version
+        ESP-IDF v6.0-dev-896-g1bbf04cb4c
+
+    # idf.py build
+
+ESP-IDF extension: "Build" button
+    Click ⚙️ Build on the VS Code status bar (bottom left), takes a while
+
+
+
+
+========================
+
+
+GOOGLE-AI:
+
+1. Install VS Code and ESP-IDF extension:
+   Download and install Visual Studio Code on your macOS system. Then, install the ESP-IDF extension from the Visual Studio Marketplace.
+2. Open your ESP-IDF project:
+   Open your ESP-IDF project in VS Code.
+3. Add Docker container configuration:
+   Navigate to View > Command Palette, search for "ESP-IDF: Add Docker Container Configuration", and select it. This will generate a .devcontainer folder in your project's root directory.
+4. Configure the container (if needed):
+   You can customize the generated .devcontainer configuration by modifying the devcontainer.json file within the folder.
+
+Close folder
+Close VSC
+
+5. Open the project in the container:
+   VS Code will prompt you to reopen the project in the newly created dev container. Choose "Reopen in Container".
+6. Flash and monitor:
+   Once the container is running, you can use the ESP-IDF extension to flash your code to the ESP32 device and monitor the serial output. You can select the serial port using the "ESP-IDF: Select Port to Use" command.
+

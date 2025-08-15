@@ -1,0 +1,12 @@
+
+
+https://github.com/me-no-dev/EspExceptionDecoder?tab=readme-ov-file
+
+
+https://github.com/esp32beans/ESP32USBMIDI/tree/main
+https://github.com/rupraph/esp32-s3-Demo-TinyUSB-MIDI/blob/main/src/main.cpp
+https://community.platformio.org/t/esp32-s3-tinyusb-config-not-working/34209/14
+https://github.com/adafruit/Adafruit_TinyUSB_Arduino/issues/279
+https://github.com/adafruit/Adafruit_TinyUSB_Arduino/pull/454
+
+https://the-sz.com/products/usbid/index.php?v=0x303A&p=0xFFFF&n=ESP32-S2

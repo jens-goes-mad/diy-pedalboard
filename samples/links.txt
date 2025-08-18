@@ -1,0 +1,10 @@
+https://the-sz.com/products/usbid/index.php?v=0x303A&p=0xFFFF&n=ESP32-S2
+https://github.com/rppicomidi/usb_midi_host/tree/main/examples/C-code
+https://github.com/esp32beans/ESP32USBMIDI/tree/main
+https://github.com/rupraph/esp32-s3-Demo-TinyUSB-MIDI/blob/main/src/main.cpp
+
+LCD: https://www.youtube.com/watch?v=wEbGhYjn4QI
+Buttonmatrix: https://www.gammon.com.au/forum/?id=14175
+https://www.zaphoyd.com/projects/websocketpp/
+https://github.com/ardera/flutter-pi
+https://m3.material.io/components/navigation-rail/specs

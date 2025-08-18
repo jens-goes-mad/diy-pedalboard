@@ -51,4 +51,5 @@ Finally, verify that your communication settings (port, board type, and speed) a
 
 With our ESP32-S3 environment ready, we can start with a [program](/esp32/midi-class-compliance) that transforms this little 5 € microcontroller 
 into a fully functional, MIDI class-compliant device. It will listen on all MIDI channels for volume change messages 
-and instantly reflect the new value by updating the onboard RGB LED.
+and instantly reflect the new value by updating the onboard RGB LED. But calm down, first we think about simulating
+a MIDI transmitter device by the help of [JavaFX](/esp32/simulation-midi) 

@@ -29,6 +29,7 @@ Some things are hard to explain with static images alone — especially when dem
 To handle this, I use [clipchamp](https://clipchamp.com/en/) — a surprisingly good online tool 
 (yes, it’s from Microsoft!) that lets you combine visuals, sound, and subtitles. 
 It’s simple, intuitive, and free for solo developers. Just works.
+Locally I use [HandBrake](https://handbrake.fr) to convert Videos from mov to mp4.
 
 ### TrueType Fonts
 
